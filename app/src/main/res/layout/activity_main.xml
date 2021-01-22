@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#67F098">
+
+    <ImageView
+        android:id="@+id/imageViewlogo"
+        android:layout_width="282dp"
+        android:layout_height="277dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="229dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewtop"
+        android:layout_width="273dp"
+        android:layout_height="266dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/top" />
+
+    <ImageView
+        android:id="@+id/imageViewleft"
+        android:layout_width="220dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-20dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="-34dp"
+        android:src="@drawable/bottomleft" />
+
+    <ImageView
+        android:id="@+id/imageViewright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-38dp"
+        android:layout_marginBottom="-144dp"
+        app:srcCompat="@drawable/bottomright" />
+</RelativeLayout>

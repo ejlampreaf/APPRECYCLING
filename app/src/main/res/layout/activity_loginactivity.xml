@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68F097">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/bgsignin"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:padding="13dp"
+        android:shadowColor="@color/Gray"
+        android:textColor="@color/Gray"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="11dp"
+        android:background="@drawable/bgsignin"
+        android:elevation="3dp"
+        android:ems="10"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="13dp"
+        android:textColor="@color/Gray"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageViewtopsi"
+        android:layout_width="295dp"
+        android:layout_height="280dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-29dp"
+        android:layout_marginTop="-57dp"
+        android:src="@drawable/top" />
+
+    <ImageView
+        android:id="@+id/imageViewleftsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-18dp"
+        android:layout_marginBottom="-26dp"
+        android:src="@drawable/bottomleft" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-38dp"
+        android:layout_marginBottom="-144dp"
+        android:src="@drawable/bottomright" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="67dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/bgsignin"
+        android:elevation="3dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="@string/ingresar"
+        android:textSize="18sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="110dp"
+        android:text="Button" />
+
+</RelativeLayout>
