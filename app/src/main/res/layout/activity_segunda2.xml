@@ -40,8 +40,8 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:background="?attr/colorPrimary"
+        android:layout_height="374dp"
+        android:background="@color/teal_700"
         app:popupTheme="@style/Theme.Splash.PopupOverlay" />
 
     <ToggleButton
