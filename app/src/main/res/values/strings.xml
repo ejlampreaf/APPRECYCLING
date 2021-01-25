@@ -38,5 +38,6 @@
     <string name="imb_lugares">Lugares</string>
     <string name="imv_home_left"></string>
     <string name="imv_home_right"></string>
+    <string name="title_activity_registro">registroActivity</string>
 </resources>
 

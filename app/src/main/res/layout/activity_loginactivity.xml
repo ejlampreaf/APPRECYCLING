@@ -74,7 +74,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="-38dp"
-        android:layout_marginBottom="-144dp"
+        android:layout_marginBottom="-145dp"
         android:src="@drawable/bottomright" />
 
     <TextView
@@ -100,9 +100,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="186dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="234dp"
         android:background="@drawable/bgsignin"
         android:elevation="3dp"
         android:fontFamily="@font/poppinsmedium"
@@ -114,5 +114,37 @@
         android:layout_height="wrap_content">
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btnolvide"
+        android:layout_width="154dp"
+        android:layout_height="32dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginEnd="126dp"
+        android:alpha="0.7"
+        android:fontFamily="@font/poppinslight"
+        android:gravity="center"
+        android:text="Olvidé la contraseña"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/btnregistro"
+        android:layout_width="154dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="586dp"
+        android:layout_marginEnd="126dp"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="REGISTRO"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
 
 </RelativeLayout>
