@@ -29,4 +29,14 @@
     <string name="im_simbolo_vidrio">Residuos de Vidrio</string>
     <string name="im_simbolo_canecas">Colores de las canecas</string>
 
+    //creamos relacion para objetos en Home
+    <string name="txt_bienvenida">BIENVENIDO A</string>
+    <string name="imv_logo_home">Logo</string>
+    <string name="imb_informacion">Informacion</string>
+    <string name="imb_danos">Daños</string>
+    <string name="imb_beneficios">Beneficios</string>
+    <string name="imb_lugares">Lugares</string>
+    <string name="imv_home_left"></string>
+    <string name="imv_home_right"></string>
 </resources>
+
