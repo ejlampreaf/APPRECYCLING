@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#68F097"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:background="#68F097">
 
 
     <ImageView
@@ -34,7 +33,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/campocorreor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -51,7 +50,7 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/campopasswordr"
         android:layout_width="349dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -68,7 +67,7 @@
         android:padding="10dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/camponombrer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -87,7 +86,7 @@
         android:textColor="#9E9D9D" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/campoapellidor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -104,4 +103,20 @@
         android:padding="10dp"
         android:text="Apellido"
         android:textColor="#9E9D9D" />
+
+    <Button
+        android:id="@+id/btnregistrarme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="557dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/bgsignin"
+        android:fontFamily="@font/poppinsmedium"
+        android:gravity="center"
+        android:text="REGISTRARME"
+        android:textSize="18sp" />
 </RelativeLayout>
