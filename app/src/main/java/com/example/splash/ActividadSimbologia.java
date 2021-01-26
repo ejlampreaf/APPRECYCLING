@@ -9,7 +9,7 @@ public class ActividadSimbologia extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_actividad_simbologia);
+       // setContentView(R.layout.activity_actividad_simbologia);
     }
 
 }
