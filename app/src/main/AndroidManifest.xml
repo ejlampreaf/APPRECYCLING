@@ -19,10 +19,6 @@
             android:name=".Activity3"
             android:label="@string/title_activity_3"
             android:theme="@style/Theme.Splash.NoActionBar" />
-        <activity
-            android:name=".SegundaActivity2"
-            android:label="@string/title_activity_segunda2"
-            android:theme="@style/Theme.Splash.NoActionBar" />
         <activity android:name=".Loginactivity" />
         <activity
             android:name=".MainActivity"
