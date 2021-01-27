@@ -9,11 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".mensaje"></activity>
-        <activity
-            android:name=".registroActivity"
-            android:label="@string/title_activity_registro"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".registroActivity"></activity>
+        <activity android:name=".mensaje" />
         <activity android:name=".activity_home" />
         <activity android:name=".ActividadSimbologia" />
         <activity android:name=".Loginactivity" />
