@@ -39,5 +39,8 @@
     <string name="imv_home_left"></string>
     <string name="imv_home_right"></string>
     <string name="title_activity_registro">registroActivity</string>
+    <string name="title_activity_registrook">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
 

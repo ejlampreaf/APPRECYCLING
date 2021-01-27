@@ -1,5 +1,6 @@
 package com.example.splash;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -24,6 +25,11 @@ public class registroActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_registro);
+    }
 
-}
+    public void backl(View view){
+        Intent volverl = new Intent(this, Loginactivity.class);
+        startActivity(volverl);
+    }
+    
 }
