@@ -117,6 +117,7 @@
         android:layout_marginEnd="31dp"
         android:background="@drawable/bgregistro"
         android:fontFamily="@font/poppinsbold"
+        android:onClick="registro"
         android:text="REGISTRARME"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />

@@ -25,4 +25,9 @@ public class registroActivity extends AppCompatActivity {
         Intent alcuenta = new Intent(this, Loginactivity.class);
         startActivity(alcuenta);
     }
+
+    public void registro(View view){
+        Intent doner = new Intent(this, mensaje.class);
+        startActivity(doner);
+    }
 }
