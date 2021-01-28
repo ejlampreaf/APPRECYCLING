@@ -28,7 +28,7 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/campopassword"
+        android:id="@+id/campopasswordis"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -106,6 +106,7 @@
         android:background="@drawable/bgregistro"
         android:elevation="3dp"
         android:fontFamily="@font/poppinsmedium"
+        android:onClick="ingresar"
         android:text="@string/ingresar"
         android:textSize="18sp" />
 
