@@ -4,117 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_home">
+    tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageviewhomeright"
-        android:layout_width="248dp"
-        android:layout_height="167dp"
+        android:id="@+id/imageviewright"
+        android:layout_width="445dp"
+        android:layout_height="330dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="16dp"
-        android:contentDescription="@string/imv_home_right"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        android:contentDescription="@string/imv_right"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagebuttonlugares"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bottomright" />
 
     <ImageView
-        android:id="@+id/imageviewhomeleft"
+        android:id="@+id/imageviewleft"
         android:layout_width="220dp"
         android:layout_height="149dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:contentDescription="@string/imv_home_left"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="216dp"
+        android:contentDescription="@string/imv_left"
         android:src="@drawable/bottomleft"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos" />
 
     <TextView
         android:id="@+id/textviewhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="108dp"
         android:contentDescription="@string/txt_bienvenida"
         android:text="@string/txt_bienvenida"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageviewlogohome"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageviewlogohome"
         android:layout_width="221dp"
         android:layout_height="133dp"
-        android:layout_marginBottom="328dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/imv_logo_home"
-        app:layout_constraintBottom_toTopOf="@+id/imageviewhomeright"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewhome"
         app:srcCompat="@drawable/logo" />
 
     <ImageButton
         android:id="@+id/imagebuttoninfo"
-        android:layout_width="109dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/imagebuttoninfo_background"
         android:contentDescription="@string/imb_informacion"
-        app:layout_constraintBottom_toTopOf="@+id/imagebuttondanos"
-        app:layout_constraintEnd_toStartOf="@+id/imagebuttonbeneficios"
-        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
         app:srcCompat="@drawable/informacion" />
 
     <ImageButton
         android:id="@+id/imagebuttondanos"
-        android:layout_width="109dp"
-        android:layout_height="105dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="60dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/imagebuttondanos_background"
         android:contentDescription="@string/imb_danos"
-        app:layout_constraintBottom_toTopOf="@+id/imageviewhomeright"
-        app:layout_constraintEnd_toStartOf="@+id/imagebuttonlugares"
-        app:layout_constraintHorizontal_bias="0.732"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttoninfo"
         app:srcCompat="@drawable/danos" />
 
     <ImageButton
         android:id="@+id/imagebuttonbeneficios"
-        android:layout_width="109dp"
-        android:layout_height="105dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
         android:background="@drawable/imagebuttonbeneficios_background"
         android:contentDescription="@string/imb_beneficios"
-        app:layout_constraintBottom_toTopOf="@+id/imagebuttonlugares"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imagebuttoninfo"
+        app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
         app:srcCompat="@drawable/beneficios" />
 
     <ImageButton
         android:id="@+id/imagebuttonlugares"
-        android:layout_width="109dp"
-        android:layout_height="105dp"
-        android:layout_marginTop="204dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/imagebuttonlugares"
         android:contentDescription="@string/imb_lugares"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/imagebuttondanos"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonbeneficios"
         app:srcCompat="@drawable/lugares" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
