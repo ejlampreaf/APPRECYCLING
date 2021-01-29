@@ -7,18 +7,18 @@
     tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageviewright"
+        android:id="@+id/imageviewrighthome"
         android:layout_width="445dp"
         android:layout_height="330dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:contentDescription="@string/imv_right"
+        android:contentDescription="@string/imv_right_Info"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagebuttonlugares"
         app:srcCompat="@drawable/bottomright" />
 
     <ImageView
-        android:id="@+id/imageviewleft"
+        android:id="@+id/imageviewlefthome"
         android:layout_width="220dp"
         android:layout_height="149dp"
         android:layout_alignParentStart="true"
@@ -26,7 +26,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="216dp"
-        android:contentDescription="@string/imv_left"
+        android:contentDescription="@string/imv_left_Home"
         android:src="@drawable/bottomleft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos" />
@@ -63,6 +63,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/imagebuttoninfo_background"
         android:contentDescription="@string/imb_informacion"
+        android:onClick="Informacion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
         app:srcCompat="@drawable/informacion" />

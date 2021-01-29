@@ -12,7 +12,9 @@
         <activity android:name=".InfoActivity"></activity>
         <activity android:name=".registroActivity" />
         <activity android:name=".mensaje" />
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity">
+
+        </activity>
         <activity android:name=".ActividadSimbologia" />
         <activity android:name=".Loginactivity" />
         <activity

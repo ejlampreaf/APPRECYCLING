@@ -6,43 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
-    <ImageView
-        android:id="@+id/imageviewhomeright3"
-        android:layout_width="362dp"
-        android:layout_height="337dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="604dp"
-        android:contentDescription="@string/imv_right"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bottomright" />
-
-    <ImageView
-        android:id="@+id/imageviewhomeleft3"
-        android:layout_width="270dp"
-        android:layout_height="166dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="636dp"
-        android:layout_marginEnd="260dp"
-        android:contentDescription="@string/imv_left"
-        android:src="@drawable/bottomleft"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/imagebuttonformas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="120dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_formas"
         android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/formasdereciclar" />
@@ -72,5 +45,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagebuttonelementos"
         app:srcCompat="@drawable/cuidadosambientales" />
+
+    <ImageView
+        android:id="@+id/imageviewleftinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginEnd="228dp"
+        android:contentDescription="@string/imv_left_Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottomleft" />
+
+    <ImageView
+        android:id="@+id/imageviewrightinfo"
+        android:layout_width="377dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="492dp"
+        android:contentDescription="@string/imv_right_Info"
+        app:layout_constraintStart_toEndOf="@+id/imageviewleftinfo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottomright" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
