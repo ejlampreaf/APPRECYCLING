@@ -50,6 +50,19 @@
     <string name="imb_cuidados">Cuidados Ambientales</string>
     <string name="imv_left_Info"></string>
     <string name="imv_right_Info"></string>
+    <string name="title_activity_menu_app">MenuApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Grupo 1 Diplomado Aplicaciones Moviles</string>
+    <string name="nav_header_subtitle">Diplomado@unad.edu.co</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Perfil</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">¿Cómo Reciclar?</string>
+    <string name="menu_slideshow">Simbolos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="menu_miayuda">Mi Ayuda</string>
 
 
 </resources>

@@ -9,21 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".InfoActivity"></activity>
-        <activity android:name=".registroActivity" />
-        <activity android:name=".mensaje" />
-        <activity android:name=".HomeActivity">
-        </activity>
-        <activity android:name=".ActividadSimbologia" />
-        <activity android:name=".Loginactivity" />
         <activity
-            android:name=".MainActivity"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+            android:name=".MenuApp"
+            android:label="@string/title_activity_menu_app"
+            android:theme="@style/Theme.Splash.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".registroActivity" />
+        <activity android:name=".mensaje" />
+        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ActividadSimbologia" />
+        <activity android:name=".Loginactivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+
         </activity>
     </application>
 
