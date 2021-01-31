@@ -8,15 +8,203 @@
 
     <TextView
         android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="245dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/tv_titulo_simbolos"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/tv_titulo_simbolos" />
+
+    <ImageButton
+        android:id="@+id/simReciclaje"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/im_simbolo_reciclaje"
+        android:scaleType="centerCrop"
+        android:src="@drawable/simboloreciclaje"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/simPuntoverde"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/im_simbolo_punto_verde"
+        android:scaleType="centerCrop"
+        android:src="@drawable/puntoverde"
+        app:layout_constraintStart_toEndOf="@+id/simReciclaje"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/simTidyman"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:contentDescription="@string/im_simbolo_tidyman"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tidyman"
+        app:layout_constraintStart_toEndOf="@+id/simPuntoverde"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/simPet"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_pet"
+        android:scaleType="centerCrop"
+        android:src="@drawable/petopete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simReciclaje" />
+
+    <ImageButton
+        android:id="@+id/simHdpe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_hdpe"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hdpe"
+        app:layout_constraintStart_toEndOf="@+id/simPet"
+        app:layout_constraintTop_toBottomOf="@+id/simPuntoverde" />
+
+    <ImageButton
+        android:id="@+id/simLdpe"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_ldpe"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ldpe"
+        app:layout_constraintStart_toEndOf="@+id/simHdpe"
+        app:layout_constraintTop_toBottomOf="@+id/simTidyman" />
+
+    <ImageButton
+        android:id="@+id/simVopvc"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_v"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vopvc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simPet" />
+
+    <ImageButton
+        android:id="@+id/simPp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_pp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pp"
+        app:layout_constraintStart_toEndOf="@+id/simVopvc"
+        app:layout_constraintTop_toBottomOf="@+id/simHdpe" />
+
+    <ImageButton
+        android:id="@+id/simPs"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ps"
+        app:layout_constraintStart_toEndOf="@+id/simPp"
+        app:layout_constraintTop_toBottomOf="@+id/simLdpe" />
+
+    <ImageButton
+        android:id="@+id/simMedicamentos"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_medicamentos"
+        android:scaleType="centerCrop"
+        android:src="@drawable/puntosigremedicamentos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simVopvc" />
+
+    <ImageButton
+        android:id="@+id/simOthers"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_others"
+        android:scaleType="centerCrop"
+        android:src="@drawable/others"
+        app:layout_constraintStart_toEndOf="@+id/simMedicamentos"
+        app:layout_constraintTop_toBottomOf="@+id/simPp" />
+
+    <ImageButton
+        android:id="@+id/simElectronicos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_electronicos"
+        android:scaleType="centerCrop"
+        android:src="@drawable/residuoselectronicos"
+        app:layout_constraintStart_toEndOf="@+id/simOthers"
+        app:layout_constraintTop_toBottomOf="@+id/simPs" />
+
+    <ImageButton
+        android:id="@+id/simCanecas"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_canecas"
+        android:scaleType="centerCrop"
+        android:src="@drawable/canecasporcolores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simMedicamentos" />
+
+    <ImageButton
+        android:id="@+id/simMetales"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_metales"
+        android:scaleType="centerCrop"
+        android:src="@drawable/reciclajedemetales"
+        app:layout_constraintStart_toEndOf="@+id/simCanecas"
+        app:layout_constraintTop_toBottomOf="@+id/simOthers" />
+
+    <ImageButton
+        android:id="@+id/simVidrio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/im_simbolo_vidrio"
+        android:scaleType="centerCrop"
+        android:src="@drawable/reciclajedevidrio"
+        app:layout_constraintStart_toEndOf="@+id/simMetales"
+        app:layout_constraintTop_toBottomOf="@+id/simElectronicos" />
+
+    <Button
+        android:id="@+id/btRegresar"
+        android:layout_width="95dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/bt_volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simVidrio" />
 </androidx.constraintlayout.widget.ConstraintLayout>
