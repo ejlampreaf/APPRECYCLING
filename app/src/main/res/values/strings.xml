@@ -13,6 +13,8 @@
     <string name="title_activity_3">Activity3</string>
 
     //creamos relacion para las imagenes
+    <string name="tv_titulo_simbolos">Simbolos del reciclaje</string>
+
     <string name="im_simbolo_reciclaje">Simbolo de reciclaje</string>
     <string name="im_simbolo_punto_verde">Simbolo Punto Verde</string>
     <string name="im_simbolo_tidyman">Tidyman</string>
@@ -28,6 +30,8 @@
     <string name="im_simbolo_metales">Residuos de Metales</string>
     <string name="im_simbolo_vidrio">Residuos de Vidrio</string>
     <string name="im_simbolo_canecas">Colores de las canecas</string>
+
+    <string name="bt_volver">Volver</string>
 
 
     //creamos relacion para objetos en activity_home

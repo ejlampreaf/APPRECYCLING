@@ -22,9 +22,11 @@
         android:name="com.example.splash.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
     <fragment
         android:id="@+id/miAyuda"
         android:name="com.example.splash.MiAyuda"
         android:label="fragment_mi_ayuda"
         tools:layout="@layout/fragment_mi_ayuda" />
+
 </navigation>
