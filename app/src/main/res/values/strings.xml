@@ -69,5 +69,14 @@
     <string name="menu_miayuda">Mi Ayuda</string>
 
 
+    //creamos relacion para objetos Beneficios
+    <string name="Reduccion">Reduce la Contaminación</string>
+    <string name="AhorroDinero">Ahorro de Dinero</string>
+    <string name="AhorroPetroleo">Ahorro de Petróleo</string>
+    <string name="RecursosNaturales">Preserva los Recursos Naturales</string>
+    <string name="Empleos">Crea Empleos</string>
+    <string name="MateriasPrimas">Menos Materias Primas</string>
+    <string name="FabricacionProductos">Fabricación Nuevos Productos</string>
+
 </resources>
 

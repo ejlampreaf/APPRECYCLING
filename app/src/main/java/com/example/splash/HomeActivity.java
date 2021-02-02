@@ -18,4 +18,10 @@ public class HomeActivity extends AppCompatActivity {
         Intent informacion = new Intent(this, InfoActivity.class);
         startActivity(informacion);
     }
+
+    //Metodo para ir a la Activity Beneficios
+    public void Beneficios (View view){
+        Intent beneficios = new Intent (this, BeneficiosActivity.class);
+        startActivity(beneficios);
+            }
 }
