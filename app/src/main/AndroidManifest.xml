@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".BeneficiosActivity"></activity>
+        <activity android:name=".Activity_busqueda_lugares"></activity>
+        <activity android:name=".BeneficiosActivity" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".registroActivity" />
         <activity android:name=".mensaje" />
-        <activity android:name=".HomeActivity">
-        </activity>
+        <activity android:name=".HomeActivity"></activity>
         <activity android:name=".Loginactivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
