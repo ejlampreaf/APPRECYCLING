@@ -78,5 +78,11 @@
     <string name="MateriasPrimas">Menos Materias Primas</string>
     <string name="FabricacionProductos">Fabricación Nuevos Productos</string>
 
+
+    //creamos relacion para items del menu
+    <string name="item_Compartir">Compartir</string>
+    <string name="item_Descargar">Descargar</string>
+
+
 </resources>
 
