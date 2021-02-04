@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+///en este menu vamos a colocar los iconos principales
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Inicio"
+            android:icon="@drawable/planeth"/>
+
+        <item
+            android:id="@+id/nav_comoreciclar"
+            android:title="¿Cómo Reciclar?"
+            android:icon="@drawable/iconocomoreciclar"/>
+
+        <item
+            android:id="@+id/nav_simbologia"
+            android:title="Simbologia"
+            android:icon="@drawable/iconosimbologia"/>
+
+    </group>
+
+    ////creacion de iconos secundarios
+
+    <item android:title="Social">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_perfil"
+                    android:title="Perfil"
+                    android:icon="@drawable/iconoperfil"/>
+
+                <item
+                    android:id="@+id/nav_miayuda"
+                    android:title="Ayuda"
+                    android:icon="@drawable/iconoayuda"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+</menu>
