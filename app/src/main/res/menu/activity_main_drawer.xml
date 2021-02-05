@@ -16,9 +16,27 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/iconosimbologia"
             android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_miayuda"
-            android:icon="@drawable/iconoayuda"
-            android:title="@string/menu_miayuda" />
+
     </group>
+
+    //Creamos secundarios
+    <item android:title="Otros">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Perfil"
+                    android:icon="@drawable/iconoperfil"
+                    android:title="@string/menu_perfil" />
+
+                <item
+                    android:id="@+id/nav_miayuda"
+                    android:icon="@drawable/iconoayuda"
+                    android:title="@string/menu_miayuda" />
+            </group>
+        </menu>
+
+
+    </item>
+
+
 </menu>

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
 
+    /// se usara como fragment como reciclar
+
     <TextView
         android:id="@+id/text_gallery"
         android:layout_width="match_parent"

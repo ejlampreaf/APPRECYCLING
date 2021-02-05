@@ -28,5 +28,10 @@
         android:name="com.example.splash.MiAyuda"
         android:label="fragment_mi_ayuda"
         tools:layout="@layout/fragment_mi_ayuda" />
+    <fragment
+        android:id="@+id/nav_Perfil"
+        android:name="com.example.splash.nav_Perfil"
+        android:label="fragment_nav__perfil"
+        tools:layout="@layout/fragment_nav__perfil" />
 
 </navigation>

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
+    //Este fragment es el que se usa como simbologia
+
     <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="245dp"
