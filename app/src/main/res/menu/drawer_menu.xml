@@ -6,7 +6,8 @@
         <item
             android:id="@+id/nav_home"
             android:title="Inicio"
-            android:icon="@drawable/planeth"/>
+            android:icon="@drawable/planeth"
+            android:checked="true"/>
 
         <item
             android:id="@+id/nav_comoreciclar"
