@@ -1,14 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".nav_Perfil">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/tvBienvanidaPerfil"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:contentDescription="@string/tv_bienvenida_perfil"
+        android:text="@string/tv_bienvenida_perfil"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-32dp" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/IngNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="96dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingnombre"
+        android:inputType="textPersonName"
+        android:text="@string/et_ingnombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBienvanidaPerfil" />
+
+    <EditText
+        android:id="@+id/IngEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingedad"
+        android:inputType="textPersonName"
+        android:text="@string/et_ingedad"
+        app:layout_constraintEnd_toEndOf="@+id/IngNombre"
+        app:layout_constraintTop_toBottomOf="@+id/IngNombre" />
+
+    <EditText
+        android:id="@+id/IngSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/et_ingsexo"
+        android:inputType="textPersonName"
+        android:text="@string/et_ingsexo"
+        app:layout_constraintEnd_toEndOf="@+id/IngEdad"
+        app:layout_constraintStart_toStartOf="@+id/IngEdad"
+        app:layout_constraintTop_toBottomOf="@+id/IngEdad"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/IngCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_ingciudad"
+        app:layout_constraintEnd_toEndOf="@+id/IngSexo"
+        app:layout_constraintStart_toStartOf="@+id/IngSexo"
+        app:layout_constraintTop_toBottomOf="@+id/IngSexo"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/IngPensamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/et_ingpensamiento"
+        app:layout_constraintEnd_toEndOf="@+id/IngCiudad"
+        app:layout_constraintStart_toStartOf="@+id/IngCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/IngCiudad"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Guardar"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

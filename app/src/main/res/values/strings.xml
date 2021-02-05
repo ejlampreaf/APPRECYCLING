@@ -84,7 +84,15 @@
     <string name="item_Compartir">Compartir</string>
     <string name="item_Descargar">Descargar</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>
+    <string name="et_ingnombre">Ingrese su Nombre</string>
+    <string name="et_ingedad">Ingrese su edad</string>
+    <string name="et_ingsexo">Ingrese su orientación sexual</string>
+    <string name="et_ingciudad">ingrese la ciudad donde vive</string>
+    <string name="et_ingpensamiento">¿Que opina sobre el reciclaje y el cuidado del medio ambiente?</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="Guardar">Button</string>
 
 
 </resources>
