@@ -7,6 +7,7 @@
     tools:context=".Activity_busqueda_lugares">
 
     <ListView
+        android:id="@+id/list1"
         android:layout_width="333dp"
         android:layout_height="473dp"
         android:layout_marginTop="32dp"
