@@ -9,20 +9,23 @@
     <ListView
         android:id="@+id/listviewtipos"
         android:layout_width="383dp"
-        android:layout_height="463dp"
-        android:layout_marginTop="220dp"
+        android:layout_height="663dp"
         android:scrollbarSize="100dp"
         android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.703" />
 
     <TextView
         android:id="@+id/textviewtipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:contentDescription="@string/textviewtipos"
+        android:text="@string/textviewtipos"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/listviewtipos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

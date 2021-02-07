@@ -62,6 +62,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Perfil</string>
 
+    //creamos relacion para objetos en activity_info_tipos
+    <string name="textviewtipos">Tipos de Reciclaje</string>
+
+
     <string name="menu_home">Home</string>
     <string name="menu_gallery">¿Cómo Reciclar?</string>
     <string name="menu_slideshow">Simbolos</string>
@@ -81,8 +85,9 @@
 
 
     //creamos relacion para items del menu
-    <string name="item_Compartir">Compartir</string>
-    <string name="item_Descargar">Descargar</string>
+    <string name="itemcompartir">Compartir</string>
+    <string name="itemdescargar">Descargar</string>
+    <string name="itemhome">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>

@@ -3,10 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item1"
-        android:title="@string/item_Compartir"
+        android:id="@+id/itemcompartir"
+        android:checkable="true"
+        android:icon="@drawable/compartir"
+        android:title="@string/itemcompartir"
         app:showAsAction="always" />
     <item
-        android:id="@+id/item2"
-        android:title="@string/item_Descargar" />
+        android:id="@+id/itemdescargar"
+        android:icon="@drawable/descarga"
+        android:title="@string/itemdescargar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itemhome"
+        android:title="@string/itemhome" />
 </menu>

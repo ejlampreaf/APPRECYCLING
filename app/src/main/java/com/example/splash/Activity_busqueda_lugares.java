@@ -1,5 +1,5 @@
 package com.example.splash;
-/* Codigo creado por Deiner Ariza*/
+/*Codigo creado por Deiner Ariza*/
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
 
 public class Activity_busqueda_lugares extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class Activity_busqueda_lugares extends AppCompatActivity {
         list1.setAdapter(adaptador);
     }
 
+
     class AdaptadorLocalidad extends ArrayAdapter<localidad>{
         AppCompatActivity appCompatActivity;
         AdaptadorLocalidad(AppCompatActivity context){
@@ -39,7 +41,7 @@ public class Activity_busqueda_lugares extends AppCompatActivity {
 
         }
 
-        public View getView(int position, View convertView, ViewGroup parent){
+public View getView(int position, View convertView, ViewGroup parent){
             LayoutInflater inflater = appCompatActivity.getLayoutInflater();
             View item = inflater.inflate(R.layout.persona, null);
 
@@ -53,11 +55,9 @@ public class Activity_busqueda_lugares extends AppCompatActivity {
                 imageView1.setImageResource(R.mipmap.suba);
             return(item);
 
-
-
         }
 
-
     }
+
 
 }

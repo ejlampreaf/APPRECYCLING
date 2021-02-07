@@ -8,7 +8,7 @@ public class localidad {
         this.n_localidad=n_localidad;
     }
     public String getSuba(){
-        return n_localidad
+        return n_localidad;
     }
 
 
