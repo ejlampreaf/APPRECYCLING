@@ -17,6 +17,54 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/tvModNombre"
+        android:layout_width="237dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvModEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvModNombre"
+        app:layout_constraintTop_toBottomOf="@+id/tvModNombre" />
+
+    <TextView
+        android:id="@+id/tvModSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvModEdad"
+        app:layout_constraintTop_toBottomOf="@+id/tvModEdad" />
+
+    <TextView
+        android:id="@+id/tvModCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvModSexo"
+        app:layout_constraintTop_toBottomOf="@+id/tvModSexo" />
+
+    <TextView
+        android:id="@+id/tvModPensamiento"
+        android:layout_width="235dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/tvModCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/tvModCiudad" />
 </androidx.constraintlayout.widget.ConstraintLayout>
