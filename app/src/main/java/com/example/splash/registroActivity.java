@@ -59,7 +59,8 @@ public class registroActivity extends AppCompatActivity implements View.OnClickL
                     if (!u.isNull()){
                         Toast.makeText(this,"Error Campos vacios", Toast.LENGTH_LONG).show();
                     }else if (du.insertUsuario(u)){
-                        Intent registrarme = new Intent(this, mensaje.class);
+                        Intent registrarme = new Intent(this, Loginactivity.class);
+                        Toast.makeText(this,"Registrado correctamente", Toast.LENGTH_LONG).show();
                         startActivity(registrarme);
                         finish();
                     }else {

@@ -11,10 +11,7 @@
         android:theme="@style/Theme.Splash">
 
         <activity android:name=".MainActivity2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
         </activity>
         <activity android:name=".Activity_busqueda_lugares"/>
@@ -23,7 +20,6 @@
         </activity>
         <activity android:name=".BeneficiosActivity" />
         <activity android:name=".registroActivity" />
-        <activity android:name=".mensaje" />
         <activity android:name=".HomeActivity" >
 
         </activity>
@@ -33,7 +29,12 @@
         <activity android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2">
         </activity>
-        <activity android:name=".Loginactivity" />
+        <activity android:name=".Loginactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
