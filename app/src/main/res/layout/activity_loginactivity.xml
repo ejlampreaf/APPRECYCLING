@@ -89,7 +89,7 @@
         android:layout_marginEnd="67dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
-        android:text="Iniciar Sesión"
+        android:text="iniciar sesión"
         android:textColor="@color/white"
         android:textSize="30sp" />
 
@@ -106,7 +106,7 @@
         android:background="@drawable/bgregistro"
         android:elevation="3dp"
         android:fontFamily="@font/poppinsmedium"
-        android:onClick="ingresar"
+        android:onClick="onClick"
         android:text="@string/ingresar"
         android:textSize="18sp" />
 
@@ -129,7 +129,7 @@
         android:alpha="0.7"
         android:fontFamily="@font/poppinslight"
         android:gravity="center"
-        android:text="Olvidé la contraseña"
+        android:text="olvidé la contraseña"
         android:textColor="#FFFFFF" />
 
     <TextView

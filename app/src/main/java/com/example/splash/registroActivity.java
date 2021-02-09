@@ -2,17 +2,26 @@ package com.example.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class registroActivity extends AppCompatActivity {
+
+public class registroActivity extends AppCompatActivity implements View.OnClickListener{
 
     private EditText email, pass, nom, ape;
+
+    private Button btnregistrarme;
+
+    dUsuario du;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,32 +37,37 @@ public class registroActivity extends AppCompatActivity {
         pass = (EditText)findViewById(R.id.campopassr);
         nom = (EditText)findViewById(R.id.camponombrer);
         ape = (EditText)findViewById(R.id.campoapellidor);
+        btnregistrarme=(Button)findViewById(R.id.btnregistrarme);
+
+        btnregistrarme.setOnClickListener(this);
+        du = new dUsuario(this);
+
     }
 
-    public void already(View view){
-        Intent alcuenta = new Intent(this, Loginactivity.class);
-        startActivity(alcuenta);
-    }
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btnregistrarme:
+                    Usuario u= new Usuario();
 
-    public void registro(View view){
-        String correo = email.getText().toString();
-        String password = pass.getText().toString();
-        String name = nom.getText().toString();
-        String lastname = ape.getText().toString();
+                    u.setCorreo(email.getText().toString());
+                    u.setCorreo(pass.getText().toString());
+                    u.setCorreo(nom.getText().toString());
+                    u.setCorreo(ape.getText().toString());
 
-        if (correo.length() == 0){
-            Toast.makeText(this, "Ingresa un correo", Toast.LENGTH_LONG).show();
-        } if (password.length() == 0){
-            Toast.makeText(this, "Ingresa una contraseña", Toast.LENGTH_LONG).show();
-        } if (name.length() == 0){
-            Toast.makeText(this, "Ingresa un nombre", Toast.LENGTH_LONG).show();
-        }if (lastname.length() == 0){
-            Toast.makeText(this, "Ingresa un apellido", Toast.LENGTH_LONG).show();
-        }
 
-        if (correo.length() != 0 && password.length() != 0 && name.length() != 0 && lastname.length() != 0){
-            Intent doner = new Intent(this, mensaje.class);
-            startActivity(doner);
+                    if (!u.isNull()){
+                        Toast.makeText(this,"Error Campos vacios", Toast.LENGTH_LONG).show();
+                    }else if (du.insertUsuario(u)){
+                        Intent registrarme = new Intent(this, mensaje.class);
+                        startActivity(registrarme);
+                        finish();
+                    }else {
+                        Toast.makeText(this,"Usuario ya registrado", Toast.LENGTH_LONG).show();
+                    }
+
+
+                break;
         }
     }
 }

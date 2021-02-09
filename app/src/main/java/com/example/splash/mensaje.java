@@ -2,8 +2,10 @@ package com.example.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class mensaje extends AppCompatActivity {
@@ -18,5 +20,10 @@ public class mensaje extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_mensaje);
+    }
+
+    public void ingresar (View view){
+        Intent Ingresar = new Intent(this, Loginactivity.class );
+        startActivity(Ingresar);
     }
 }

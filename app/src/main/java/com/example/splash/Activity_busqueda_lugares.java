@@ -16,9 +16,9 @@ import java.util.ArrayList;
 
 public class Activity_busqueda_lugares extends AppCompatActivity {
 
-    private ArrayList<localidad> listalocalidades;
+   /* private ArrayList<localidad> listalocalidades;
 
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,10 +54,10 @@ public View getView(int position, View convertView, ViewGroup parent){
             else
                 imageView1.setImageResource(R.mipmap.suba);
             return(item);
-
-        }
+*/
+/*        }
 
     }
 
-
+*/
 }
