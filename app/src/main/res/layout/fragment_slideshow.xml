@@ -68,7 +68,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginLeft="90dp"
                     android:layout_marginBottom="2dp"
-                    android:text="Creado en Alemania en 1991 y adoptado en 1994 por los Países Miembros de la UE, señala que los productos cumplen con la normativa que obliga a las empresas de envases a responsabilizarse del reciclaje de sus productos"
+                    android:text="Fue creado en 1970, en un producto o envase, significa que está fabricado con materiales reciclables"
                     android:textColor="@color/black"
                     android:textSize="10dp"
                     android:textStyle="normal" />
@@ -125,6 +125,64 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginLeft="50dp"
                     android:layout_marginBottom="2dp"
+                    android:text="Creado en Alemania en 1991 y adoptado en 1994 por los Países Miembros de la UE, señala que los productos cumplen con la normativa que obliga a las empresas de envases a responsabilizarse del reciclaje de sus productos."
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rvs3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/tidyman"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/tidyman" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayouts3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotexts3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo Tidyman"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texts3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
                     android:text="Su objetivo es claro: responsabilizar a quien quiere deshacerse del mismo para que lo haga en un lugar adecuado."
                     android:textColor="@color/black"
                     android:textSize="10dp"
@@ -133,7 +191,182 @@
         </RelativeLayout>
 
 
+        <RelativeLayout
+            android:id="@+id/rvs4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/petopete"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/petopete" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayouts4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotexts4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo PET o PETE (Polietileno tereftalato)"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texts4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Plástico muy usado en envases de bebidas y textiles, se le considera NO biodegradable, puede ser degradado mediante un proceso químico."
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rvs5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/hdpe"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/hdpe" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayouts5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotexts5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo HDPE (Polietileno de alta densidad)"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texts5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Plástico muy usado fabricación de objetos, Se puede reciclar por procesos de separación y selección, molienda, secado y paletizado."
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rvs6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/vopvc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/vopvc" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayouts6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotexts6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo de V o PVC (Vinílicos o Cloruro de Polivinilo)"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/texts6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Derivado del plástico más versátil, puede ser reciclado por proceso mecánico, químico o energético"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
         
+
+
 
 
 
