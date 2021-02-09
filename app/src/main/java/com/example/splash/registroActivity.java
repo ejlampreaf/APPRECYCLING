@@ -51,9 +51,9 @@ public class registroActivity extends AppCompatActivity implements View.OnClickL
                     Usuario u= new Usuario();
 
                     u.setCorreo(email.getText().toString());
-                    u.setCorreo(pass.getText().toString());
-                    u.setCorreo(nom.getText().toString());
-                    u.setCorreo(ape.getText().toString());
+                    u.setContrasena(pass.getText().toString());
+                    u.setNombre(nom.getText().toString());
+                    u.setApellido(ape.getText().toString());
 
 
                     if (!u.isNull()){
