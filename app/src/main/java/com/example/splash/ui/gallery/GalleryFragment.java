@@ -18,6 +18,4 @@ import com.example.splash.R;
 public class GalleryFragment extends Fragment {
     private RecyclerView cardView;
 
-
-
 }

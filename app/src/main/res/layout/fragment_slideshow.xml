@@ -1,212 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_simbolos"
+    layout_height="match:parent"
+    layout_width="wrap_content"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:background="@color/teal_700">
 
-    //Este fragment es el que se usa como simbologia
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"        >
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="245dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        android:contentDescription="@string/tv_titulo_simbolos"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/tv_titulo_simbolos" />
+        <RelativeLayout
+            android:id="@+id/rvs1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
 
-    <ImageButton
-        android:id="@+id/simReciclaje"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="56dp"
-        android:contentDescription="@string/im_simbolo_reciclaje"
-        android:scaleType="centerCrop"
-        android:src="@drawable/simboloreciclaje"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/simboloreciclaje"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/simboloreciclaje" />
 
-    <ImageButton
-        android:id="@+id/simPuntoverde"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
-        android:contentDescription="@string/im_simbolo_punto_verde"
-        android:scaleType="centerCrop"
-        android:src="@drawable/puntoverde"
-        app:layout_constraintStart_toEndOf="@+id/simReciclaje"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/simTidyman"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
-        android:contentDescription="@string/im_simbolo_tidyman"
-        android:scaleType="centerCrop"
-        android:src="@drawable/tidyman"
-        app:layout_constraintStart_toEndOf="@+id/simPuntoverde"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/linearLayouts1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/simPet"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_pet"
-        android:scaleType="centerCrop"
-        android:src="@drawable/petopete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simReciclaje" />
+                <TextView
+                    android:id="@+id/titulotexts1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo de Reciclar"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/simHdpe"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_hdpe"
-        android:scaleType="centerCrop"
-        android:src="@drawable/hdpe"
-        app:layout_constraintStart_toEndOf="@+id/simPet"
-        app:layout_constraintTop_toBottomOf="@+id/simPuntoverde" />
+                <TextView
+                    android:id="@+id/texts1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Creado en Alemania en 1991 y adoptado en 1994 por los Países Miembros de la UE, señala que los productos cumplen con la normativa que obliga a las empresas de envases a responsabilizarse del reciclaje de sus productos"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/simLdpe"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_ldpe"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ldpe"
-        app:layout_constraintStart_toEndOf="@+id/simHdpe"
-        app:layout_constraintTop_toBottomOf="@+id/simTidyman" />
+        <RelativeLayout
+            android:id="@+id/rvs2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
 
-    <ImageButton
-        android:id="@+id/simVopvc"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_v"
-        android:scaleType="centerCrop"
-        android:src="@drawable/vopvc"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simPet" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/puntoverde"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|top"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scaleType="centerCrop"
+                card_view:srcCompat="@drawable/puntoverde" />
 
-    <ImageButton
-        android:id="@+id/simPp"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_pp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/pp"
-        app:layout_constraintStart_toEndOf="@+id/simVopvc"
-        app:layout_constraintTop_toBottomOf="@+id/simHdpe" />
 
-    <ImageButton
-        android:id="@+id/simPs"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ps"
-        app:layout_constraintStart_toEndOf="@+id/simPp"
-        app:layout_constraintTop_toBottomOf="@+id/simLdpe" />
+            <LinearLayout
+                android:id="@+id/linearLayouts2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/simMedicamentos"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_medicamentos"
-        android:scaleType="centerCrop"
-        android:src="@drawable/puntosigremedicamentos"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simVopvc" />
+                <TextView
+                    android:id="@+id/titulotexts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Simbolo punto verde"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/simOthers"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_others"
-        android:scaleType="centerCrop"
-        android:src="@drawable/others"
-        app:layout_constraintStart_toEndOf="@+id/simMedicamentos"
-        app:layout_constraintTop_toBottomOf="@+id/simPp" />
+                <TextView
+                    android:id="@+id/texts2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Su objetivo es claro: responsabilizar a quien quiere deshacerse del mismo para que lo haga en un lugar adecuado."
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
 
-    <ImageButton
-        android:id="@+id/simElectronicos"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_electronicos"
-        android:scaleType="centerCrop"
-        android:src="@drawable/residuoselectronicos"
-        app:layout_constraintStart_toEndOf="@+id/simOthers"
-        app:layout_constraintTop_toBottomOf="@+id/simPs" />
 
-    <ImageButton
-        android:id="@+id/simCanecas"
-        android:layout_width="100dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_canecas"
-        android:scaleType="centerCrop"
-        android:src="@drawable/canecasporcolores"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simMedicamentos" />
+        
 
-    <ImageButton
-        android:id="@+id/simMetales"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_metales"
-        android:scaleType="centerCrop"
-        android:src="@drawable/reciclajedemetales"
-        app:layout_constraintStart_toEndOf="@+id/simCanecas"
-        app:layout_constraintTop_toBottomOf="@+id/simOthers" />
 
-    <ImageButton
-        android:id="@+id/simVidrio"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/im_simbolo_vidrio"
-        android:scaleType="centerCrop"
-        android:src="@drawable/reciclajedevidrio"
-        app:layout_constraintStart_toEndOf="@+id/simMetales"
-        app:layout_constraintTop_toBottomOf="@+id/simElectronicos" />
 
-    <Button
-        android:id="@+id/btRegresar"
-        android:layout_width="95dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/bt_volver"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/simVidrio" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
