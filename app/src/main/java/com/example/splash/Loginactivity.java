@@ -1,10 +1,13 @@
     package com.example.splash;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -12,12 +15,18 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Loginactivity extends AppCompatActivity implements View.OnClickListener {
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-    private EditText n, p;
-    private TextView  btnregistro;
-    private Button btningresar;
-    dUsuario du;
+    public class Loginactivity extends AppCompatActivity{
+
+    EditText nombre;
+    EditText password;
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,48 +38,63 @@ public class Loginactivity extends AppCompatActivity implements View.OnClickList
         }
 
         setContentView(R.layout.activity_loginactivity);
-
-
-        n = (EditText)findViewById(R.id.camponombreis);
-        p = (EditText)findViewById(R.id.campopasswordis);
-        btningresar=(Button)findViewById(R.id.btningresar);
-        btnregistro=(TextView)findViewById(R.id.btnregistro);
-
-
-        btningresar.setOnClickListener(this);
-        btnregistro.setOnClickListener(this);
-
-        du=new dUsuario(this);
-
+        initViews();
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.btningresar:
-                    String u=n.getText().toString();
-                    String pass=p.getText().toString();
+    private void initViews(){
 
-                    if (u.equals("")&&pass.equals("")){
-                        Toast.makeText(this,"Error:Campos vacios", Toast.LENGTH_LONG).show();
-                    }else if (du.login(u, pass)==1){
-                        Usuario ux=du.getUsuario(u, pass);
-                        Toast.makeText(this,"Datos correctos", Toast.LENGTH_LONG).show();
-                        Intent i2=new Intent(Loginactivity.this, HomeActivity.class);
-                        i2.putExtra("Id",ux.getId());
-                        startActivity(i2);
-                        finish();
-                    }else {
-                        Toast.makeText(this,"Datos incorrectos", Toast.LENGTH_LONG).show();
+        mAuth = FirebaseAuth.getInstance();
+        nombre = (EditText)findViewById(R.id.camponombreis);
+        password = (EditText)findViewById(R.id.campopasswordis);
+    }
+
+
+    public void IngresarL(View view) {
+
+        if (TextUtils.isEmpty(nombre.getText()) || TextUtils.isEmpty(password.getText())){
+            Toast.makeText(this, "Campos incompletos", Toast.LENGTH_LONG).show();
+        }else {
+            String email = nombre.getText().toString();
+            String pass = password.getText().toString();
+            acceder(email, pass);
+        }
+    }
+
+    private void acceder(String email, String password){
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getApplicationContext(), "Iniciando sesión", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Datos incorrectos, intenta de nuevo", Toast.LENGTH_LONG).show();
+                        }
+
+                        // ...
                     }
+                });
+    }
 
-                break;
+        public void recuperarcontrasena(View view) {
 
-            case R.id.btnregistro:
-                Intent i=new Intent(Loginactivity.this, registroActivity.class);
-                startActivity(i);
-                break;
+
+
+        if (TextUtils.isEmpty(nombre.getText())){
+            Toast.makeText(this, "Introduce un correo en el campo correo y vuelve a presionar este botón", Toast.LENGTH_LONG).show();
+        }else {
+            String email= nombre.getText().toString();
+
+            mAuth.sendPasswordResetEmail(email)
+                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getApplicationContext(), "Se ha enviado un correo para restablecer la contraseña", Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    });
+        }
 
         }
     }
-}

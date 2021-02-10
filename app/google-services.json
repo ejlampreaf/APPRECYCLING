@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991194209856",
+    "project_id": "apprecycling-13f93",
+    "storage_bucket": "apprecycling-13f93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991194209856:android:9b2fe658caf64726a609a5",
+        "android_client_info": {
+          "package_name": "com.example.splash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991194209856-3s3p4l0vo2541en94fr3ln28n72r7gik.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwVNmOWYwJQ5kRUzSBkeQL3Wv1cjzNbMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991194209856-3s3p4l0vo2541en94fr3ln28n72r7gik.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

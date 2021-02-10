@@ -106,7 +106,7 @@
         android:background="@drawable/bgregistro"
         android:elevation="3dp"
         android:fontFamily="@font/poppinsmedium"
-        android:onClick="onClick"
+        android:onClick="IngresarL"
         android:text="@string/ingresar"
         android:textSize="18sp" />
 
@@ -126,9 +126,10 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="541dp"
         android:layout_marginEnd="106dp"
-        android:alpha="0.7"
+        android:alpha="0.9"
         android:fontFamily="@font/poppinslight"
         android:gravity="center"
+        android:onClick="recuperarcontrasena"
         android:text="olvidé la contraseña"
         android:textColor="#FFFFFF" />
 
