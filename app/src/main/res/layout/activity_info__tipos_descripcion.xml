@@ -10,6 +10,7 @@
         android:id="@+id/textviewtiposdescripcion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/textviewtiposdescripcion"
         android:text="TextView"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

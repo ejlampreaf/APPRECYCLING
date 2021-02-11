@@ -65,6 +65,9 @@
     //creamos relacion para objetos en activity_info_tipos
     <string name="textviewtipos">Tipos de Reciclaje</string>
 
+    //creamos relacion para objetos en activity_info_tipos_descripcion
+    <string name="textviewtiposdescripcion">Descripcion</string>
+
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">¿Cómo Reciclar?</string>
