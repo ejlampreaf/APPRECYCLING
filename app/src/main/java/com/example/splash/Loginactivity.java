@@ -48,6 +48,12 @@ import com.google.firebase.auth.FirebaseUser;
         password = (EditText)findViewById(R.id.campopasswordis);
     }
 
+    public void btnr(View view){
+        Intent register = new Intent(this, registroActivity.class);
+        startActivity(register);
+
+    }
+
 
     public void IngresarL(View view) {
 
@@ -66,7 +72,9 @@ import com.google.firebase.auth.FirebaseUser;
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(getApplicationContext(), "Iniciando sesión", Toast.LENGTH_LONG).show();
+                            Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                            startActivity(i);
+                            finish();
                         } else {
                             Toast.makeText(getApplicationContext(), "Datos incorrectos, intenta de nuevo", Toast.LENGTH_LONG).show();
                         }

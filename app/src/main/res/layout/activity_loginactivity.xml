@@ -145,7 +145,7 @@
         android:layout_marginEnd="101dp"
         android:fontFamily="@font/poppinsbold"
         android:gravity="center"
-        android:onClick="registrarme"
+        android:onClick="btnr"
         android:text="Registrarme"
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
