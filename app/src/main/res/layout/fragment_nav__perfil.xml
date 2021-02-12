@@ -92,7 +92,8 @@
         android:layout_height="wrap_content"
         android:text="@string/Guardar"
         tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="552dp" />
+        tools:layout_editor_absoluteY="552dp"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

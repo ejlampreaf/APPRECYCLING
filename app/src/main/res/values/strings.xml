@@ -60,7 +60,7 @@
     <string name="nav_header_title">Grupo 1 Diplomado Aplicaciones Moviles</string>
     <string name="nav_header_subtitle">Diplomado@unad.edu.co</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Perfil</string>
+    <string name="action_settings">Ver Perfil</string>
 
     //creamos relacion para objetos en activity_info_tipos
     <string name="textviewtipos">Tipos de Reciclaje</string>
