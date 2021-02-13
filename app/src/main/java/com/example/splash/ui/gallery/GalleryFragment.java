@@ -16,6 +16,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.splash.R;
 
 public class GalleryFragment extends Fragment {
-    private RecyclerView cardView;
+    View vista;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        vista=inflater.inflate(R.layout.fragment_gallery, container, false);
+
+        return vista;
+    }
+
 
 }

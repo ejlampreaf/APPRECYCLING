@@ -15,6 +15,14 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.splash.R;
 
 public class SlideshowFragment extends Fragment {
+    View vista1;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        vista1=inflater.inflate(R.layout.fragment_slideshow, container, false);
+
+        return vista1;
+    }
 
 
 }
