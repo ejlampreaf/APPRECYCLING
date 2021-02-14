@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#68F097"
 
     tools:context=".nav_Perfil">
 
@@ -12,26 +13,31 @@
 
     <TextView
         android:id="@+id/tvBienvanidaPerfil"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:contentDescription="@string/tv_bienvenida_perfil"
         android:text="@string/tv_bienvenida_perfil"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-32dp" />
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/IngNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="44dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_ingnombre"
         android:inputType="textPersonName"
         android:text="@string/et_ingnombre"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvBienvanidaPerfil" />
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvanidaPerfil" />
 
     <EditText
         android:id="@+id/IngEdad"
@@ -90,10 +96,11 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
         android:text="@string/Guardar"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="552dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="@+id/IngPensamiento"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="552dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

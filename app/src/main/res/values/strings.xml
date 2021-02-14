@@ -101,6 +101,8 @@
     <string name="et_ingpensamiento">¿Que opina sobre el reciclaje y el cuidado del medio ambiente?</string>
     <string name="btn_guardar">Guardar</string>
     <string name="Guardar">Button</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ver_perfil">Perfil</string>
 
 
 </resources>
