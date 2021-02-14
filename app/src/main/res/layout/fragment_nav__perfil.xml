@@ -27,8 +27,8 @@
 
     <EditText
         android:id="@+id/IngNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="44dp"
         android:autofillHints=""
@@ -36,43 +36,47 @@
         android:hint="@string/et_ingnombre"
         android:inputType="textPersonName"
         android:text="@string/et_ingnombre"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBienvanidaPerfil" />
 
     <EditText
         android:id="@+id/IngEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="44dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_ingedad"
-        android:inputType="textPersonName"
+        android:inputType="text|number"
         android:text="@string/et_ingedad"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/IngNombre"
         app:layout_constraintTop_toBottomOf="@+id/IngNombre" />
 
     <EditText
         android:id="@+id/IngSexo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="44dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/et_ingsexo"
         android:inputType="textPersonName"
         android:text="@string/et_ingsexo"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/IngEdad"
         app:layout_constraintStart_toStartOf="@+id/IngEdad"
-        app:layout_constraintTop_toBottomOf="@+id/IngEdad"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/IngEdad" />
 
     <EditText
         android:id="@+id/IngCiudad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textSize="12dp"
         android:text="@string/et_ingciudad"
         app:layout_constraintEnd_toEndOf="@+id/IngSexo"
         app:layout_constraintStart_toStartOf="@+id/IngSexo"
@@ -81,11 +85,12 @@
 
     <EditText
         android:id="@+id/IngPensamiento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textSize="12dp"
         android:text="@string/et_ingpensamiento"
         app:layout_constraintEnd_toEndOf="@+id/IngCiudad"
         app:layout_constraintStart_toStartOf="@+id/IngCiudad"
