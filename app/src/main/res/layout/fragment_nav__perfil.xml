@@ -20,7 +20,7 @@
         android:contentDescription="@string/tv_bienvenida_perfil"
         android:text="@string/tv_bienvenida_perfil"
         android:textColor="@color/common_google_signin_btn_text_light_pressed"
-        android:textSize="16dp"
+        android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,7 +36,7 @@
         android:hint="@string/et_ingnombre"
         android:inputType="textPersonName"
         android:text="@string/et_ingnombre"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvBienvanidaPerfil" />
 
@@ -50,7 +50,7 @@
         android:hint="@string/et_ingedad"
         android:inputType="text|number"
         android:text="@string/et_ingedad"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/IngNombre"
         app:layout_constraintTop_toBottomOf="@+id/IngNombre" />
 
@@ -64,7 +64,7 @@
         android:hint="@string/et_ingsexo"
         android:inputType="textPersonName"
         android:text="@string/et_ingsexo"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/IngEdad"
         app:layout_constraintStart_toStartOf="@+id/IngEdad"
         app:layout_constraintTop_toBottomOf="@+id/IngEdad" />
@@ -76,7 +76,7 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:text="@string/et_ingciudad"
         app:layout_constraintEnd_toEndOf="@+id/IngSexo"
         app:layout_constraintStart_toStartOf="@+id/IngSexo"
@@ -90,7 +90,7 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:textSize="12dp"
+        android:textSize="12sp"
         android:text="@string/et_ingpensamiento"
         app:layout_constraintEnd_toEndOf="@+id/IngCiudad"
         app:layout_constraintStart_toStartOf="@+id/IngCiudad"
