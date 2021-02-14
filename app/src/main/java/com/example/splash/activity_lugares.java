@@ -16,9 +16,9 @@ public class activity_lugares extends AppCompatActivity {
 
     //Declaracion de arrays que contienen los valores de las localidades y direcciones
     //son dos arrays localidad y ubicacion
-    private String[] localidad = {"Suba", "Engativa", "Bosa", "Usaquen","Chapinero"};
-    private String[] ubicacion = {"calle32-125-80", "cra45-85-90", "calle52-89-65", "Av4-89-69",
-            "Av89-98-93"};
+    private String[] localidad = {"Engativa", "Kennedy", "Fontibon", "Antonio Nariño","Chapinero"};
+    private String[] ubicacion = {"C. C Titan Plaza, Cra72 80-94", "Tranv 71d # 6-94Sur", "AV Ciudad de Cali con AV Ferrocarril, cl20 #82-52", "C Comercial Centro Mayor AV. NQS # cra38a sur",
+            "C Comercial 93, Carrera 15 # 93-60"};
     //Se definen los objetos tipo textview y listview
     private TextView tv1;
     private ListView list1;
