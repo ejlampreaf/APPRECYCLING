@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
+
         <activity android:name=".activity_lugares"></activity>
         <activity android:name=".MainActivity2"></activity>
         <activity
@@ -34,6 +35,12 @@
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"></activity>
+
+        <activity
+            android:name=".MenuApp"></activity>
+
+
+
     </application>
 
 </manifest>

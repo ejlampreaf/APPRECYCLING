@@ -74,28 +74,30 @@
         android:layout_width="220dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/et_ingciudad"
         android:inputType="textPersonName"
-        android:textSize="12sp"
         android:text="@string/et_ingciudad"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/IngSexo"
         app:layout_constraintStart_toStartOf="@+id/IngSexo"
-        app:layout_constraintTop_toBottomOf="@+id/IngSexo"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/IngSexo" />
 
     <EditText
         android:id="@+id/IngPensamiento"
         android:layout_width="220dp"
         android:layout_height="40dp"
         android:layout_marginTop="44dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/et_ingpensamiento"
         android:inputType="textPersonName"
-        android:textSize="12sp"
         android:text="@string/et_ingpensamiento"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/IngCiudad"
         app:layout_constraintStart_toStartOf="@+id/IngCiudad"
-        app:layout_constraintTop_toBottomOf="@+id/IngCiudad"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/IngCiudad" />
 
     <Button
         android:id="@+id/btnGuardar"
