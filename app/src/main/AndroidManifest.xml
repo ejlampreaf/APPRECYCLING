@@ -39,7 +39,7 @@
         <activity
             android:name=".InfoActivity"
             android:theme="@style/Theme.Splash_2" />
-        <activity android:name=".BeneficiosActivity" />
+        <activity android:name=".BeneficiosActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".registroActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Info_TiposActivity" />
