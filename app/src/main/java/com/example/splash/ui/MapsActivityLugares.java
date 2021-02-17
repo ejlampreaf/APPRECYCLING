@@ -9,6 +9,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -39,9 +40,21 @@ public class MapsActivityLugares extends FragmentActivity implements OnMapReadyC
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
+
+        // Add a marker in Bogota and move the camera
+        LatLng bogota = new LatLng(4.6533326, -74.083652);
+        mMap.addMarker(new MarkerOptions().position(bogota).title("Bogota D.C."));
+
+
+        LatLng engativa = new LatLng(4.6959442398114675, -74.08649384160711);
+        mMap.addMarker(new MarkerOptions().position(engativa).title("Localidad Engativa").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng kennedy = new LatLng(4.618962828456479, -74.13516864509474);
+        mMap.addMarker(new MarkerOptions().position(kennedy).title("Localidad Kenndy").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        //Camara
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(bogota,10));
+
     }
 }
