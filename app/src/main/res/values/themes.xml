@@ -35,6 +35,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+
+
+
     <style name="Theme.Splash.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Splash.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

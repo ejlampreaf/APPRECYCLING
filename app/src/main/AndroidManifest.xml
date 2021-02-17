@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.splash">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -18,7 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-
+        <activity android:name=".activity_benitem7"  android:theme="@style/Theme.Splash_2"></activity>
+        <activity android:name=".activity_benitem6"  android:theme="@style/Theme.Splash_2" />
+        <activity android:name=".activity_benitem5"  android:theme="@style/Theme.Splash_2" />
+        <activity android:name=".activity_benitem4"   android:theme="@style/Theme.Splash_2"/>
+        <activity android:name=".activity_benitem3"  android:theme="@style/Theme.Splash_2" />
+        <activity android:name=".activity_benitem2"  android:theme="@style/Theme.Splash_2" />
+        <activity
+            android:name=".activity_benitem1"
+            android:theme="@style/Theme.Splash_2" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -33,13 +40,15 @@
 
         <activity
             android:name=".ui.MapsActivityLugares"
-            android:label="@string/title_activity_maps_lugares"></activity>
+            android:label="@string/title_activity_maps_lugares" />
         <activity android:name=".activity_lugares" />
         <activity android:name=".MainActivity2" />
         <activity
             android:name=".InfoActivity"
             android:theme="@style/Theme.Splash_2" />
-        <activity android:name=".BeneficiosActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".BeneficiosActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registroActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Info_TiposActivity" />
