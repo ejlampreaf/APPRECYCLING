@@ -103,6 +103,7 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/imagebuttonlugares"
         android:contentDescription="@string/imb_lugares"
+        android:onClick="Lugares"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toEndOf="@+id/imagebuttondanos"
