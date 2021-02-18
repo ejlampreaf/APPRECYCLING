@@ -1,11 +1,25 @@
 package com.example.splash;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+
+import java.io.FileOutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public class activity_benitem1 extends AppCompatActivity {
 
@@ -21,30 +35,7 @@ public class activity_benitem1 extends AppCompatActivity {
         return true;
     }
 
-    //Metodo para agregar acciones basicas a los botones
 
-    public boolean onOptionsItemSelected (MenuItem item){
-        int id = item.getItemId();
-
-        if(id == R.id.itemcompartir){
-            Intent regresar = new Intent(this, HomeActivity.class);
-            startActivity(regresar);
-            return true;
-        }
-        else
-        if(id == R.id.itemdescargar){
-            Intent regresar = new Intent(this, HomeActivity.class);
-            startActivity(regresar);
-            return true;
-        }
-        else
-        if(id == R.id.itemhome) {
-            Intent regresar = new Intent(this, HomeActivity.class);
-            startActivity(regresar);
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 
 }
