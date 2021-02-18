@@ -56,16 +56,25 @@
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
         <activity android:name=".Loginactivity">
+
+
+
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+        <activity android:name=".MenuApp"
+            android:theme="@style/Theme.Splash.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
-        <activity android:name=".MenuApp" />
+
+
     </application>
 
 </manifest>
