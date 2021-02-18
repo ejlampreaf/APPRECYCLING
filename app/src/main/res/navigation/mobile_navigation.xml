@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
@@ -42,5 +42,10 @@
         android:name="com.example.splash.nav_Perfil"
         android:label="fragment_nav__perfil"
         tools:layout="@layout/fragment_nav__perfil" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.splash.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 
 </navigation>

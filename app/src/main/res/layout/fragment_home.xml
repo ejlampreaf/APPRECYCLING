@@ -6,65 +6,117 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+
+    <ImageView
+        android:id="@+id/imageviewrighthome"
+        android:layout_width="445dp"
+        android:layout_height="330dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/imv_right_Info"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonlugares"
+        app:srcCompat="@drawable/bottomright" />
+
+    <ImageView
+        android:id="@+id/imageviewlefthome"
+        android:layout_width="220dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="216dp"
+        android:contentDescription="@string/imv_left_Home"
+        android:src="@drawable/bottomleft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos" />
 
     <TextView
-        android:id="@+id/tvModNombre"
-        android:layout_width="237dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="40dp"
-        android:text="TextView"
+        android:id="@+id/textviewhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:contentDescription="@string/txt_bienvenida"
+        android:text="@string/txt_bienvenida"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvModEdad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tvModNombre"
-        app:layout_constraintTop_toBottomOf="@+id/tvModNombre" />
+    <ImageView
+        android:id="@+id/imageviewlogohome"
+        android:layout_width="221dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/imv_logo_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewhome"
+        app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/tvModSexo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/imagebuttoninfo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tvModEdad"
-        app:layout_constraintTop_toBottomOf="@+id/tvModEdad" />
+        android:background="@drawable/imagebuttoninfo_background"
+        android:contentDescription="@string/imb_informacion"
+        android:onClick="Informacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
+        app:srcCompat="@drawable/informacion" />
 
-    <TextView
-        android:id="@+id/tvModCiudad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tvModSexo"
-        app:layout_constraintTop_toBottomOf="@+id/tvModSexo" />
+    <ImageButton
+        android:id="@+id/imagebuttondanos"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/imagebuttondanos_background"
+        android:contentDescription="@string/imb_danos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttoninfo"
+        app:srcCompat="@drawable/danos" />
 
-    <TextView
-        android:id="@+id/tvModPensamiento"
-        android:layout_width="235dp"
-        android:layout_height="67dp"
+    <ImageButton
+        android:id="@+id/imagebuttonbeneficios"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tvModCiudad"
-        app:layout_constraintTop_toBottomOf="@+id/tvModCiudad" />
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/imagebuttonbeneficios_background"
+        android:contentDescription="@string/imb_beneficios"
+        android:onClick="Beneficios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imagebuttoninfo"
+        app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
+        app:srcCompat="@drawable/beneficios" />
+
+    <ImageButton
+        android:id="@+id/imagebuttonlugares"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/imagebuttonlugares"
+        android:contentDescription="@string/imb_lugares"
+        android:onClick="Lugares"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toEndOf="@+id/imagebuttondanos"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonbeneficios"
+        app:srcCompat="@drawable/lugares" />
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
