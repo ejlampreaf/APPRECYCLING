@@ -103,6 +103,7 @@
     <string name="Guardar">Button</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="ver_perfil">Perfil</string>
+    <string name="title_activity_maps_lugares">Map</string>
 
 
 </resources>

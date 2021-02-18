@@ -5,12 +5,16 @@ package com.example.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.splash.ui.MapsActivityLugares;
 
 public class activity_lugares extends AppCompatActivity {
 
@@ -23,9 +27,12 @@ public class activity_lugares extends AppCompatActivity {
     private TextView tv1;
     private ListView list1;
 
+    //Se declara la actividad tipo boton
+
+    Button btmapa;
+
+
     //Sobre el evento create se configura (ser adapter) el array localidad para ser configurado en el objeto listview
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +40,20 @@ public class activity_lugares extends AppCompatActivity {
 
         tv1 = (TextView)findViewById(R.id.tv1);
         list1 = (ListView)findViewById(R.id.list1);
+        btmapa = (Button)findViewById(R.id.btmapa);
+
+        btmapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getApplicationContext(), MapsActivityLugares.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1,localidad);
         list1.setAdapter(adapter);
