@@ -15,7 +15,7 @@ public class Info_TiposActivity extends AppCompatActivity {
     private ListView listviewtipos;
     private String [] lista = {"Reciclaje de papel y cartón", "Reciclaje de vidrio", "Reciclaje de textil y calzado", "Reciclaje de residuos orgánicos (biorresiduos)", "Reciclaje de pilas y baterías", "Reciclaje de chatarra o metales", "Reciclaje de tierras y escombros", "Reciclaje de agua", "Reciclaje de aparatos eléctricos y electrónicos", "Reciclaje de basura"};
     private String [] descripcion = {"Descripcion - Reciclaje de papel y cartón", "Descripcion - Reciclaje de vidrio", "Descripcion - Reciclaje de textil y calzado", "Descripcion - Reciclaje de residuos orgánicos (biorresiduos)", "Descripcion - Reciclaje de pilas y baterías", "Descripcion - Reciclaje de chatarra o metales", "Descripcion - Reciclaje de tierras y escombros", "Descripcion - Reciclaje de agua", "Descripcion - Reciclaje de aparatos eléctricos y electrónicos", "Descripcion - Reciclaje de basura"};
-
+    private int [] datosimg = {R.drawable.informacion, R.drawable.danos, R.drawable.descarga,R.drawable.compartir};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +34,7 @@ public class Info_TiposActivity extends AppCompatActivity {
                 Intent intent = new Intent(Info_TiposActivity.this, Info_TiposDescripcionActivity.class);
                 // Envio de parametros
                 intent.putExtra("Descripcion", descripcion[position]);
+                intent.putExtra("Image_Descripcion", datosimg[position]);
                 startActivity(intent);
             }
         });
