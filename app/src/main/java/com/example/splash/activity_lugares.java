@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -29,7 +30,8 @@ public class activity_lugares extends AppCompatActivity {
 
     //Se declara la actividad tipo boton
 
-    Button btmapa;
+    //Button btmapa;
+    ImageButton imbutton1;
 
 
     //Sobre el evento create se configura (ser adapter) el array localidad para ser configurado en el objeto listview
@@ -40,18 +42,16 @@ public class activity_lugares extends AppCompatActivity {
 
         tv1 = (TextView)findViewById(R.id.tv1);
         list1 = (ListView)findViewById(R.id.list1);
-        btmapa = (Button)findViewById(R.id.btmapa);
+        imbutton1 = (ImageButton) findViewById(R.id.imbutton1);
 
-        btmapa.setOnClickListener(new View.OnClickListener() {
+        imbutton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(getApplicationContext(), MapsActivityLugares.class);
                 startActivity(intent);
-
-
             }
         });
+
 
 
 

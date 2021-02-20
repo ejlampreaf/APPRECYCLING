@@ -10,46 +10,51 @@
         android:id="@+id/tv1"
         android:layout_width="263dp"
         android:layout_height="67dp"
-        android:layout_marginTop="60dp"
-        android:text="TextView"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/list1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/list1"
-        android:layout_width="342dp"
-        android:layout_height="437dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="341dp"
+        android:layout_height="424dp"
+        android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv1"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btmapa"
+    <ImageButton
+        android:id="@+id/imbutton1"
+        android:layout_width="85dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list1"
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/googlemaps" />
+
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir al mapa"
+        android:text="Tambien puedes ir la mapa"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintEnd_toStartOf="@+id/imbutton1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list1"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintTop_toBottomOf="@+id/list1" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="79dp"
-        android:layout_height="81dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleciona la localidad de tu interes"
+        app:layout_constraintBottom_toTopOf="@+id/tv1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/list1"
-        app:layout_constraintVertical_bias="0.483"
-        app:srcCompat="@drawable/googlemaps" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
