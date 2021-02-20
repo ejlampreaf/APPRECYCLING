@@ -14,12 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link nav_Perfil#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class nav_Perfil extends Fragment {
+
     EditText IngNombre, IngEdad, IngSexo, IngCiudad, IngPensamiento;
     Button btnGuardar;
 
@@ -31,6 +27,7 @@ public class nav_Perfil extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInsatanceState) {
         return inflater.inflate(R.layout.fragment_nav__perfil, container, false);
     }
+
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -56,6 +53,7 @@ public class nav_Perfil extends Fragment {
             }
         });
     }
+
 
 
 

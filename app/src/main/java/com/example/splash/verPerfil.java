@@ -18,6 +18,7 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class verPerfil extends Fragment {
+
     TextView perf_nombre, perf_edad, perf_sexo, perf_ciudad, perf_pensamiento;
 
     public verPerfil() {

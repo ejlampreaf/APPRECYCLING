@@ -24,7 +24,11 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.splash.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -36,12 +40,20 @@
         android:id="@+id/miAyuda"
         android:name="com.example.splash.MiAyuda"
         android:label="fragment_mi_ayuda"
-        tools:layout="@layout/fragment_mi_ayuda" />
+        tools:layout="@layout/fragment_mi_ayuda" >
+        <action
+            android:id="@+id/action_miAyuda_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/nav_Perfil"
         android:name="com.example.splash.nav_Perfil"
-        android:label="fragment_nav__perfil"
-        tools:layout="@layout/fragment_nav__perfil" />
+        android:label="Modificar mi perfil"
+        tools:layout="@layout/fragment_nav__perfil">
+        <action
+            android:id="@+id/action_nav_Perfil_to_ver_perfil"
+            app:destination="@+id/nav_home"/>
+    </fragment>
     <activity
         android:id="@+id/homeActivity"
         android:name="com.example.splash.HomeActivity"
