@@ -54,8 +54,4 @@ public class nav_Perfil extends Fragment {
         });
     }
 
-
-
-
-
 }
