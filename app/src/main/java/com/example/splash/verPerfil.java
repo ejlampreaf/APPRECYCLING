@@ -40,14 +40,6 @@ public class verPerfil extends Fragment {
                 perf_pensamiento.setText(IngPensamiento);
             }
         });
-
-
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInsatanceState) {
-        return inflater.inflate(R.layout.fragment_ver_perfil, container, false);
-
     }
 
     @Override
@@ -58,11 +50,13 @@ public class verPerfil extends Fragment {
         perf_sexo = view.findViewById(R.id.IngSexo);
         perf_ciudad = view.findViewById(R.id.IngCiudad);
         perf_pensamiento = view.findViewById(R.id.IngPensamiento);
-
     }
 
-
-
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInsatanceState) {
+        View view = inflater.inflate(R.layout.fragment_ver_perfil, container, false);
+        return view;
+    }
 
 
 }
