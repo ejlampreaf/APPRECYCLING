@@ -12,11 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link verPerfil#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class verPerfil extends Fragment {
 
     TextView perf_nombre, perf_edad, perf_sexo, perf_ciudad, perf_pensamiento;
