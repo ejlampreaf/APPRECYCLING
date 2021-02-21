@@ -7,27 +7,42 @@
     tools:context=".Info_TiposDescripcionActivity">
 
     <TextView
-        android:id="@+id/textviewtiposdescripcion"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/textviewtiposdescripcion"
-        android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/textviewtitulotiposdescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/textviewtitulotiposdescripcion"
+        android:text="@string/textviewtitulotiposdescripcion"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imvtiposdescripcion"
-        android:layout_width="170dp"
-        android:layout_height="161dp"
-        android:layout_marginTop="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/imvtiposdescripcion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewtiposdescripcion"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/informacion" />
+
+    <TextView
+        android:id="@+id/textviewtiposdescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:contentDescription="@string/textviewtiposdescripcion"
+        android:text="@string/textviewtiposdescripcion"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/informacion" />
+        app:layout_constraintTop_toBottomOf="@+id/textviewtitulotiposdescripcion" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

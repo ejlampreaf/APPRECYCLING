@@ -66,6 +66,7 @@
     <string name="textviewtipos">Tipos de Reciclaje</string>
 
     //creamos relacion para objetos en activity_info_tipos_descripcion
+    <string name="textviewtitulotiposdescripcion">Titulo_Descripcion</string>
     <string name="textviewtiposdescripcion">Descripcion</string>
     <string name="imvtiposdescripcion">imagen_Descripcion</string>
 

@@ -1,6 +1,7 @@
 package com.example.splash;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
@@ -8,36 +9,47 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.pdf.PdfDocument;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.itextpdf.text.Document;
+import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
 public class Info_TiposDescripcionActivity extends AppCompatActivity {
 
     private static final int STORAGE_CODE = 1000;
+    public TextView textViewtitulotiposdescripcion;
     public TextView textViewtiposdescripcion;
     public ImageView imvtiposdescripcion;
     public Bitmap bmp;
     public Bitmap scaledBitmap;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info__tipos_descripcion);
+
+        textViewtitulotiposdescripcion = (TextView) findViewById(R.id.textviewtitulotiposdescripcion);
+        textViewtitulotiposdescripcion.setText(getIntent().getStringExtra("Titulo_Descripcion"));
 
         textViewtiposdescripcion = (TextView) findViewById(R.id.textviewtiposdescripcion);
         textViewtiposdescripcion.setText(getIntent().getStringExtra("Descripcion"));
@@ -45,9 +57,10 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         imvtiposdescripcion = (ImageView) findViewById(R.id.imvtiposdescripcion);
         imvtiposdescripcion.setImageResource(getIntent().getIntExtra("Image_Descripcion",0));
 
-        /*bmp = BitmapFactory.decodeResource(getResources(),R.drawable.info);
-        scaledBitmap = Bitmap.createScaledBitmap(bmp, 100,200, false);*/
 
+        bmp = BitmapFactory.decodeResource(getResources(),getIntent().getIntExtra("Image_Descripcion",0));
+        /*float proporcion = 250 / ((float) bmp.getWidth());*/
+        //scaledBitmap = Bitmap.createScaledBitmap(bm,100,100, false);
     }
 
     private void savePdf() {
@@ -55,12 +68,21 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         String mFileName = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(System.currentTimeMillis());
         String mFilePath = Environment.getExternalStorageDirectory() + "/" + mFileName + ".pdf";
 
+        Bitmap bm = BitmapFactory.decodeResource(getResources(), getIntent().getIntExtra("Image_Descripcion",0));
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bm,100,100, false);
+        scaledBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        Image img = null;
+        byte[] byteArray = stream.toByteArray();
+
         try {
             PdfWriter.getInstance(mDoc, new FileOutputStream(mFilePath));
             mDoc.open();
             String mtext = textViewtiposdescripcion.getText().toString();
             mDoc.addAuthor("Jorge Carrillo");
             mDoc.add(new Paragraph(mtext));
+            img = Image.getInstance(byteArray);
+            mDoc.add(img);
             mDoc.close();
             Toast.makeText(this, mFileName + ".pdf\nis saved to\n" + mFilePath, Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
@@ -71,12 +93,12 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        switch (requestCode){
-            case STORAGE_CODE:{
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case STORAGE_CODE: {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     savePdf();
-                }
-                else {
+                } else {
                     Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
                 }
 
