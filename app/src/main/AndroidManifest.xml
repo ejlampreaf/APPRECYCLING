@@ -52,17 +52,17 @@
         <activity android:name=".registroActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".Info_TiposActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
         <activity android:name=".Loginactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"
