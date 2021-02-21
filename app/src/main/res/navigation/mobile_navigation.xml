@@ -51,13 +51,22 @@
         android:label="Modificar mi perfil"
         tools:layout="@layout/fragment_nav__perfil">
         <action
-            android:id="@+id/action_nav_Perfil_to_ver_perfil"
-            app:destination="@+id/nav_home"/>
+            android:id="@+id/action_nav_Perfil_to_verPerfil"
+            app:destination="@id/verPerfil" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"
         android:name="com.example.splash.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/verPerfil"
+        android:name="com.example.splash.verPerfil"
+        android:label="fragment_ver_perfil"
+        tools:layout="@layout/fragment_ver_perfil" >
+        <action
+            android:id="@+id/action_verPerfil_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 
 </navigation>
