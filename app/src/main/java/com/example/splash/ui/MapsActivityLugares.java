@@ -53,6 +53,53 @@ public class MapsActivityLugares extends FragmentActivity implements OnMapReadyC
         LatLng kennedy = new LatLng(4.618962828456479, -74.13516864509474);
         mMap.addMarker(new MarkerOptions().position(kennedy).title("Localidad Kenndy").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
 
+        LatLng fontibon = new LatLng(4.663860418896225, -74.13048860074342);
+        mMap.addMarker(new MarkerOptions().position(fontibon).title("Localidad Fontibon").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng antonionarino = new LatLng(4.592576344286128, -74.12348714748954);
+        mMap.addMarker(new MarkerOptions().position(antonionarino).title("Localidad Antonio Nariño").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng chapinero = new LatLng(4.6772438605410045, -74.05098069166759);
+        mMap.addMarker(new MarkerOptions().position(chapinero).title("Localidad Chapinero").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng tunjuelito = new LatLng(4.583968396180182, -74.12986683443437);
+        mMap.addMarker(new MarkerOptions().position(tunjuelito).title("Localidad Tunjuelito").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng puentearanda = new LatLng(4.624490032204794, -74.11237382975196);
+        mMap.addMarker(new MarkerOptions().position(puentearanda).title("Localidad Puente Aranda").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng ciudadbolivar = new LatLng(4.595779238237001, -74.15932302844737);
+        mMap.addMarker(new MarkerOptions().position(ciudadbolivar).title("Localidad Ciudad Bolivar").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng teusaquillo = new LatLng(4.687839649769288, -74.12669140885218);
+        mMap.addMarker(new MarkerOptions().position(teusaquillo).title("Localidad Teusaquillo").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng sancristobal = new LatLng(4.566840803381606, -74.09654503029718);
+        mMap.addMarker(new MarkerOptions().position(sancristobal).title("Localidad San Cristobal").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng bosa = new LatLng(4.595899415559824, -74.1634402554333);
+        mMap.addMarker(new MarkerOptions().position(bosa).title("Localidad Bosa").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng rafaeluribe = new LatLng(4.581591238755807, -74.11417664563986);
+        mMap.addMarker(new MarkerOptions().position(rafaeluribe).title("Localidad Rafael Uribe").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng santafe = new LatLng(4.572245158721604, -74.09769045858782);
+        mMap.addMarker(new MarkerOptions().position(santafe).title("Localidad Santa Fe").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //Camara
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(bogota,10));
 

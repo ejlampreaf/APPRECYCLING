@@ -20,14 +20,12 @@ public class nav_Perfil extends Fragment {
     Button btnGuardar;
 
     public nav_Perfil() {
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInsatanceState) {
         return inflater.inflate(R.layout.fragment_nav__perfil, container, false);
     }
-
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
