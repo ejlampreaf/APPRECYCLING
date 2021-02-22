@@ -8,8 +8,8 @@
 
     <ListView
         android:id="@+id/listviewtipos"
-        android:layout_width="383dp"
-        android:layout_height="663dp"
+        android:layout_width="395dp"
+        android:layout_height="604dp"
         android:scrollbarSize="100dp"
         android:scrollbarThumbVertical="@drawable/custom_scroll_style"
         app:layout_constraintBottom_toBottomOf="parent"

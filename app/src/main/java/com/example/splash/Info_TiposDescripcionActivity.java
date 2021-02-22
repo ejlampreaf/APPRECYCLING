@@ -21,7 +21,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Image;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -33,14 +37,16 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
+import static kotlin.text.Typography.paragraph;
+
 public class Info_TiposDescripcionActivity extends AppCompatActivity {
 
     private static final int STORAGE_CODE = 1000;
     public TextView textViewtitulotiposdescripcion;
     public TextView textViewtiposdescripcion;
     public ImageView imvtiposdescripcion;
-    public Bitmap bmp;
-    public Bitmap scaledBitmap;
+    //public Bitmap bmp;
+    //public Bitmap scaledBitmap;
 
 
     @Override
@@ -58,8 +64,8 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         imvtiposdescripcion.setImageResource(getIntent().getIntExtra("Image_Descripcion",0));
 
 
-        bmp = BitmapFactory.decodeResource(getResources(),getIntent().getIntExtra("Image_Descripcion",0));
-        /*float proporcion = 250 / ((float) bmp.getWidth());*/
+        //bmp = BitmapFactory.decodeResource(getResources(),getIntent().getIntExtra("Image_Descripcion",0));
+
         //scaledBitmap = Bitmap.createScaledBitmap(bm,100,100, false);
     }
 
@@ -70,7 +76,8 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
 
         Bitmap bm = BitmapFactory.decodeResource(getResources(), getIntent().getIntExtra("Image_Descripcion",0));
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bm,100,100, false);
+        float proporcion = 400 / ((float) bm.getWidth());
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bm,400, (int) (bm.getHeight() * proporcion), false);
         scaledBitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         Image img = null;
         byte[] byteArray = stream.toByteArray();
@@ -78,15 +85,26 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         try {
             PdfWriter.getInstance(mDoc, new FileOutputStream(mFilePath));
             mDoc.open();
-            String mtext = textViewtiposdescripcion.getText().toString();
-            mDoc.addAuthor("Jorge Carrillo");
-            mDoc.add(new Paragraph(mtext));
+            String titdescripcion = textViewtitulotiposdescripcion.getText().toString();
+            String textdescripcion = textViewtiposdescripcion.getText().toString();
+            mDoc.addAuthor("APPRECYCLING");
+            Font negrita = new Font();
+            negrita.setStyle(Font.BOLD);
+            Paragraph titulo = new Paragraph(titdescripcion,negrita);
+            titulo.setAlignment(Element.ALIGN_CENTER);
+            titulo.setSpacingAfter(10);
+            mDoc.add(titulo);
+            Paragraph texto = new Paragraph(textdescripcion);
+            texto.setAlignment(Element.ALIGN_JUSTIFIED);
+            texto.setSpacingAfter(10);
+            mDoc.add(texto);
             img = Image.getInstance(byteArray);
+            img.setAlignment(Element.ALIGN_CENTER);
             mDoc.add(img);
             mDoc.close();
-            Toast.makeText(this, mFileName + ".pdf\nis saved to\n" + mFilePath, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Archivo\n" + mFileName + ".pdf\nis saved to\n" + mFilePath, Toast.LENGTH_LONG).show();
         } catch (Exception e) {
-            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Archivo no descargado\n"+ e.getMessage(), Toast.LENGTH_LONG).show();
             ;
         }
     }
