@@ -70,6 +70,24 @@
     <string name="textviewtiposdescripcion">Descripcion</string>
     <string name="imvtiposdescripcion">imagen_Descripcion</string>
 
+
+    //creamos relacion para objetos en activity_info_elementos_reciclables
+    <string name="txtviewelemento">Elementos</string>
+    <string name="txtviewelementosi">Reciclar</string>
+    <string name="txtviewelementono">No reciclar</string>
+    <string name="imgviewpapel">Papel</string>
+    <string name="imgbuttonpapelsi">si</string>
+    <string name="imgbuttonpapelno">no</string>
+    <string name="imgviewplastico">plastico</string>
+    <string name="imgbuttonplasticosi">si</string>
+    <string name="imgbuttonplasticono">no</string>
+    <string name="imgviewvidrio">vidrio</string>
+    <string name="imgbuttonvidriosi">si</string>
+    <string name="imgbuttonvidriono">no</string>
+    <string name="imgviewmetal">metal</string>
+    <string name="imgbuttonmetalsi">si</string>
+    <string name="imgbuttonmetalno">no</string>
+
     <string name="menu_home">Home</string>
     <string name="menu_gallery">¿Cómo Reciclar?</string>
     <string name="menu_slideshow">Simbolos</string>

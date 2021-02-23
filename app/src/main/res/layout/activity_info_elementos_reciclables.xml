@@ -25,129 +25,158 @@
                 android:gravity="center">
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/txtviewelemento"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/txtviewelemento"
                     android:gravity="center"
-                    android:padding="2dp"
-                    android:text="TextView"
-                    android:textAlignment="center" />
+                    android:padding="10dp"
+                    android:text="@string/txtviewelemento"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/txtviewelementosi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/txtviewelementosi"
                     android:gravity="center"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAlignment="center" />
+                    android:padding="10dp"
+                    android:text="@string/txtviewelementosi"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView11"
+                    android:id="@+id/txtviewelementono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/txtviewelementono"
                     android:gravity="center"
-                    android:padding="5dp"
-                    android:text="TextView"
-                    android:textAlignment="center" />
+                    android:padding="10dp"
+                    android:text="@string/txtviewelementono"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center">
+                android:gravity="center"
+                android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imgviewpapel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgviewpapel"
                     android:gravity="center"
-                    android:padding="2dp"
                     app:srcCompat="@drawable/elementospapel" />
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/imgbuttonpapelsi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonpapelsi"
                     android:gravity="center"
-                    android:padding="5dp"
                     app:srcCompat="@drawable/elementossi" />
 
                 <ImageButton
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/imgbuttonpapelno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonpapelno"
                     android:gravity="center"
-                    android:padding="5dp"
                     app:srcCompat="@drawable/elementosno" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                >
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/imgviewplastico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgviewplastico"
+                    android:gravity="center"
                     app:srcCompat="@drawable/elementoplastico" />
 
                 <ImageButton
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/imgbuttonplasticosi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonplasticosi"
+                    android:gravity="center"
                     app:srcCompat="@drawable/elementossi" />
 
                 <ImageButton
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/imgbuttonplasticono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonplasticono"
+                    android:gravity="center"
                     app:srcCompat="@drawable/elementosno" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imgviewvidrio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgviewvidrio"
                     app:srcCompat="@drawable/elementovidrio" />
 
                 <ImageButton
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/imgbuttonvidriosi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonvidriosi"
                     app:srcCompat="@drawable/elementossi" />
 
                 <ImageButton
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/imgbuttonvidriono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonvidriono"
                     app:srcCompat="@drawable/elementosno" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/imgviewmetal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgviewmetal"
                     app:srcCompat="@drawable/elementometal" />
 
                 <ImageButton
-                    android:id="@+id/imageButton7"
+                    android:id="@+id/imgbuttonmetalsi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonmetalsi"
                     app:srcCompat="@drawable/elementossi" />
 
                 <ImageButton
-                    android:id="@+id/imageButton8"
+                    android:id="@+id/imgbuttonmetalno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/imgbuttonmetalno"
                     app:srcCompat="@drawable/elementosno" />
             </TableRow>
 
