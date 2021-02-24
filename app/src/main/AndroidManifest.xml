@@ -19,6 +19,7 @@
         android:theme="@style/Theme.Splash">
         <activity android:name=".Info_ElementosReciclablesActivity"
             android:theme="@style/Theme.Splash_2">
+
         </activity>
 
 
@@ -68,7 +69,9 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registroActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".Info_TiposActivity"></activity>
+        <activity android:name=".Info_TiposActivity">
+
+        </activity>
         <activity
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
