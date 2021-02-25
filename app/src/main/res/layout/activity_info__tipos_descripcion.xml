@@ -32,7 +32,7 @@
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
-            <TextView
+            <com.codesgood.views.JustifiedTextView
                 android:id="@+id/textviewtiposdescripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
