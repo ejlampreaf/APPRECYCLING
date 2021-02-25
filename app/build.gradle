@@ -55,5 +55,6 @@ dependencies {
 
     // Libreria para escribir pdf
     implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'com.codesgood:justifiedtextview:1.1.0'
 
 }
