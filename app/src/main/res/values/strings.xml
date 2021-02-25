@@ -73,8 +73,8 @@
 
     //creamos relacion para objetos en activity_info_elementos_reciclables
     <string name="txtviewelemento">Elementos</string>
-    <string name="txtviewelementosi">Reciclar</string>
-    <string name="txtviewelementono">No reciclar</string>
+    <string name="txtviewelementosi">Que Reciclar</string>
+    <string name="txtviewelementono">Que No reciclar</string>
     <string name="imgviewpapel">Papel</string>
     <string name="imgbuttonpapelsi">si</string>
     <string name="imgbuttonpapelno">no</string>

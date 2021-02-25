@@ -40,7 +40,6 @@
                 android:contentDescription="@string/textviewtiposdescripcion"
                 android:padding="10dp"
                 android:text="@string/textviewtiposdescripcion"
-                android:textAlignment="center"
                 android:textSize="18sp" />
 
             <ImageView
