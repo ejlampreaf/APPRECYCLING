@@ -31,7 +31,7 @@
     <fragment
         android:id="@+id/miAyuda"
         android:name="com.example.splash.MiAyuda"
-        android:label="fragment_mi_ayuda"
+        android:label="@string/menu_miayuda"
         tools:layout="@layout/fragment_mi_ayuda" >
         <action
             android:id="@+id/action_miAyuda_to_nav_home"
@@ -40,7 +40,7 @@
     <fragment
         android:id="@+id/nav_Perfil"
         android:name="com.example.splash.nav_Perfil"
-        android:label="Modificar mi perfil"
+        android:label="@string/menu_perfil"
         tools:layout="@layout/fragment_nav__perfil">
         <action
             android:id="@+id/action_nav_Perfil_to_verPerfil"

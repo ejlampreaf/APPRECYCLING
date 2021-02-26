@@ -94,6 +94,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="menu_miayuda">Mi Ayuda</string>
     <string name="menu_perfil">Perfil</string>
+    <string name="menu_modificarperfil">Modificar Perfil</string>
+
+    //items del menu owerflow2
+    <string name="verperfil">Ver Perfil</string>
+    <string name="comoReciclar">Como Reciclar</string>
+    <string name="simbolos">Ver Simbolos</string>
+    <string name="modificarPerfil">Modificar Perfil</string>
+    <string name="miAyuda">mi Ayuda</string>
+
 
 
     //creamos relacion para objetos Beneficios
