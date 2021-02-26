@@ -4,17 +4,23 @@
 
     <item
         android:id="@+id/verPerfil"
-        android:title="@string/verperfil" />
+        android:title="@string/verperfil"
+        android:icon="@drawable/iconoperfil"/>
+
     <item
         android:id="@+id/comoReciclar"
-        android:title="@string/comoReciclar" />
+        android:title="@string/comoReciclar"
+        android:icon="@drawable/iconocomoreciclar"/>
     <item
         android:id="@+id/Simbolos"
-        android:title="@string/simbolos" />
+        android:title="@string/simbolos"
+        android:icon="@drawable/iconosimbologia"/>
     <item
         android:id="@+id/modificarPerfil"
-        android:title="@string/modificarPerfil" />
+        android:title="@string/modificarPerfil"
+        android:icon="@drawable/simboloreciclaje"/>
     <item
         android:id="@+id/miAyuda"
-        android:title="@string/miAyuda" />
+        android:title="@string/miAyuda"
+        android:icon="@drawable/iconoayuda"/>
 </menu>

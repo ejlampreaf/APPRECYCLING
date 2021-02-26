@@ -13,11 +13,11 @@ public class ActivityMenuOverflow extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_home);
     }
 
     //Metodo para mostrar y ocultar el menu overfloat2
-    public boolean onCreateOpcionsMenu(Menu menu){
+    public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.overflow2, menu);
         return true;
     }
