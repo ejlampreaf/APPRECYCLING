@@ -17,12 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".Info_ElementosReciclablesActivity"
+        <activity android:name=".Info_CuidadosAmbientales">
+
+        </activity>
+        <activity
+            android:name=".Info_ElementosReciclablesActivity"
             android:theme="@style/Theme.Splash_2">
 
         </activity>
-
-
         <activity
             android:name=".activity_benitem7"
             android:theme="@style/Theme.Splash_2" />
@@ -69,9 +71,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registroActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".Info_TiposActivity">
-
-        </activity>
+        <activity android:name=".Info_TiposActivity"></activity>
         <activity
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
@@ -87,7 +87,7 @@
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
         <activity
             android:name=".MenuApp"
-            android:theme="@style/Theme.Splash.NoActionBar"></activity>
+            android:theme="@style/Theme.Splash.NoActionBar" />
     </application>
 
 </manifest>
