@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="card_view" type="id" />
+    <item name="ingNombre" type="id" />
+    <item name="ingEdad" type="id" />
+    <item name="ingSexo" type="id" />
+    <item name="ingCiudad" type="id" />
+    <item name="ingPensamiento" type="id" />
 </resources>
