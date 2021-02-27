@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Splash</string>
+    <string name="app_name">AppRecycling</string>
     <string name="ingresar">Ingresar</string>
     <string name="title_activity_segunda2">SegundaActivity2</string>
     <!-- Strings used for fragments for navigation -->
@@ -140,10 +140,16 @@
     <string name="btn_como_cambiar_perfil">Comó cambiar mi perfil</string>
 
 
+
+
     <string name="Guardar">Button</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="ver_perfil">Perfil</string>
     <string name="title_activity_maps_lugares">Map</string>
+
+
+
+    <string name="picture">Mi foto</string>
 
 
 </resources>
