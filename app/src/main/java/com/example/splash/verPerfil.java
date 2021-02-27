@@ -23,6 +23,8 @@ public class verPerfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_perfil);
 
+        
+
         perf_nombre = (TextView)findViewById(R.id.perf_nombre) ;
         perf_edad = (TextView)findViewById(R.id.perf_edad) ;
         perf_sexo = (TextView)findViewById(R.id.perf_sexo) ;

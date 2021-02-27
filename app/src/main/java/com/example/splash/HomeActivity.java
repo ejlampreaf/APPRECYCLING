@@ -57,23 +57,23 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.verPerfil:
                 Intent intent1 = new Intent(this, activity_verPerfil.class);
                 startActivity(intent1);
-                break;
+                return true;
             case R.id.comoReciclar:
                 Intent intent2 = new Intent(this, activity_comoReciclar.class);
                 startActivity(intent2);
-                break;
+                return true;
             case R.id.Simbolos:
                 Intent intent3 = new Intent(this, activity_simbolos.class);
                 startActivity(intent3);
-                break;
+                return true;
             case R.id.modificarPerfil:
                 Intent intent4 = new Intent(this, activity_modificarPerfil.class);
                 startActivity(intent4);
-                break;
+                return true;
             case R.id.miAyuda:
                 Intent intent5 = new Intent(this, activity_miAyuda.class);
                 startActivity(intent5);
-                break;
+                return true;
 
 
         }

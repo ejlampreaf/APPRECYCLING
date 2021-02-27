@@ -17,18 +17,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".activity_miAyuda">
+        <activity android:name=".activity_miAyuda"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
-        <activity android:name=".activity_modificarPerfil" >
+        <activity android:name=".activity_modificarPerfil"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
-        <activity android:name=".activity_simbolos" >
+        <activity android:name=".activity_simbolos"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
         <activity android:name=".activity_comoReciclar" >
         </activity>
-        <activity android:name=".activity_verPerfil" >
+        <activity android:name=".activity_verPerfil"
+            android:parentActivityName=".HomeActivity">
 
         </activity>
         <activity android:name=".Info_CuidadosAmbientales" ></activity>
