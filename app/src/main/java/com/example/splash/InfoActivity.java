@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class InfoActivity extends AppCompatActivity {
@@ -15,6 +16,26 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
     }
+
+    //Metodo para ir a la actvity Info_TiposActivity
+    public void Tipos (View view){
+        Intent tipos = new Intent(this, Info_TiposActivity.class);
+        startActivity(tipos);
+    }
+
+    //Metodo para ir a la Activity ElementosReciclablesActivity
+    public void Elementos (View view){
+        Intent elementos = new Intent (this, Info_ElementosReciclablesActivity.class);
+        startActivity(elementos);
+    }
+
+    //Metodo para ir a la Activity Info_CuidadosAmbientales
+    public void Cuidados (View view) {
+        Intent cuidados = new Intent(this, Info_CuidadosAmbientales.class);
+        startActivity(cuidados);
+    }
+
+
 
 
     //Metodo para mostrar los botones de accion

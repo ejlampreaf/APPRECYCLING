@@ -17,11 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".Info_ElementosReciclablesActivity"
-            android:theme="@style/Theme.Splash_2">
-
+        <activity android:name=".Info_ElementosReciclablesActivity">
         </activity>
-
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -40,14 +37,19 @@
             android:label="@string/title_activity_maps_lugares" />
         <activity android:name=".activity_lugares" />
         <activity android:name=".MainActivity2" />
-        <activity
-            android:name=".InfoActivity"
-            android:theme="@style/Theme.Splash_2" />
+        <activity android:name=".InfoActivity">
+        </activity>
+
         <activity
             android:name=".BeneficiosActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registroActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".HomeActivity">
+
+        </activity>
+        <activity android:name=".Info_CuidadosAmbientales">
+        </activity>
+
         <activity android:name=".Info_TiposActivity">
 
         </activity>

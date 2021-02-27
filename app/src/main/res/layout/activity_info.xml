@@ -7,15 +7,16 @@
     tools:context=".InfoActivity">
 
     <ImageButton
-        android:id="@+id/imagebuttonformas"
+        android:id="@+id/imagebuttontipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_formas"
+        android:onClick="Tipos"
         android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/formasdereciclar" />
@@ -27,10 +28,11 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_elementos"
+        android:onClick="Elementos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttonformas"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttontipos"
         app:srcCompat="@drawable/elementosreciclables" />
 
     <ImageButton
@@ -40,6 +42,7 @@
         android:layout_marginTop="16dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_cuidados"
+        android:onClick="Cuidados"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,8 +53,8 @@
         android:id="@+id/imageviewleftinfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="620dp"
-        android:layout_marginEnd="228dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginEnd="212dp"
         android:contentDescription="@string/imv_left_Info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -61,7 +64,7 @@
         android:id="@+id/imageviewrightinfo"
         android:layout_width="377dp"
         android:layout_height="326dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginTop="528dp"
         android:contentDescription="@string/imv_right_Info"
         app:layout_constraintStart_toEndOf="@+id/imageviewleftinfo"
         app:layout_constraintTop_toTopOf="parent"

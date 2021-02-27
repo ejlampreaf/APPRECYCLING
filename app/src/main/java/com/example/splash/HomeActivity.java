@@ -39,7 +39,6 @@ public class HomeActivity extends AppCompatActivity {
     public void Lugares (View view) {
         Intent lugares = new Intent(this, activity_lugares.class);
         startActivity(lugares);
-
     }
 
     //Logica para incorporar el menu overfloat a la aplicación
