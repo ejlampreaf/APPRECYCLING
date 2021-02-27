@@ -29,11 +29,7 @@
         <activity android:name=".activity_comoReciclar" >
         </activity>
         <activity android:name=".activity_verPerfil" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Info_CuidadosAmbientales" ></activity>
         <activity
@@ -87,6 +83,11 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <activity android:name=".Info_TiposActivity" />

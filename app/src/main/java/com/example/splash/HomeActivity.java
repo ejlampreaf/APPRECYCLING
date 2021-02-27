@@ -43,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     //Logica para incorporar el menu overfloat a la aplicación
+
     //Metodo para mostrar los botones de accion
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.overflow2, menu);
@@ -52,19 +53,29 @@ public class HomeActivity extends AppCompatActivity {
     //Metodo para asignar las funciones correspondientes a las opciones
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
-        if (id==R.id.verPerfil){
-            Toast.makeText(this, "ver el perfil", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.comoReciclar){
-            Toast.makeText(this, "ver como reciclar", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.Simbolos){
-            Toast.makeText(this, "ver los simbolos", Toast.LENGTH_SHORT).show();
-        }else if (id==R.id.modificarPerfil){
-            Toast.makeText(this, "ver modificar perfil", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.miAyuda){
-            Toast.makeText(this, "ver la ayuda", Toast.LENGTH_SHORT).show();
+        switch (item.getItemId()) {
+            case R.id.verPerfil:
+                Intent intent1 = new Intent(this, activity_verPerfil.class);
+                startActivity(intent1);
+                break;
+            case R.id.comoReciclar:
+                Intent intent2 = new Intent(this, activity_comoReciclar.class);
+                startActivity(intent2);
+                break;
+            case R.id.Simbolos:
+                Intent intent3 = new Intent(this, activity_simbolos.class);
+                startActivity(intent3);
+                break;
+            case R.id.modificarPerfil:
+                Intent intent4 = new Intent(this, activity_modificarPerfil.class);
+                startActivity(intent4);
+                break;
+            case R.id.miAyuda:
+                Intent intent5 = new Intent(this, activity_miAyuda.class);
+                startActivity(intent5);
+                break;
+
+
         }
         return super.onOptionsItemSelected(item);
 
