@@ -17,49 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".activity_miAyuda">
+        <activity android:name=".Info_ElementosReciclablesActivity"
+            android:theme="@style/Theme.Splash_2">
 
         </activity>
-        <activity android:name=".activity_modificarPerfil" >
 
-        </activity>
-        <activity android:name=".activity_simbolos" >
 
-        </activity>
-        <activity android:name=".activity_comoReciclar" >
-        </activity>
-        <activity android:name=".activity_verPerfil" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Info_CuidadosAmbientales" ></activity>
-        <activity
-            android:name=".Info_ElementosReciclablesActivity"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem7"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem6"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem5"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem4"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem3"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem2"
-            android:theme="@style/Theme.Splash_2" />
-        <activity
-            android:name=".activity_benitem1"
-            android:theme="@style/Theme.Splash_2" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -84,22 +47,26 @@
             android:name=".BeneficiosActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".registroActivity" />
-        <activity
-            android:name=".HomeActivity"
-            android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Info_TiposActivity">
 
         </activity>
-        <activity android:name=".Info_TiposActivity" />
         <activity
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
-        <activity android:name=".ActivityMenuOverflow" />
+        <activity android:name=".Loginactivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
         <activity
             android:name=".MenuApp"
-            android:theme="@style/Theme.Splash.NoActionBar" />
+            android:theme="@style/Theme.Splash.NoActionBar"></activity>
     </application>
 
 </manifest>

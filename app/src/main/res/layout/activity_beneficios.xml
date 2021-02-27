@@ -26,21 +26,20 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="608dp"
+        android:layout_marginTop="616dp"
         android:layout_marginEnd="220dp"
         android:src="@drawable/bottomleft"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btBenitem2"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="369dp"
         android:layout_height="45dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/boton_redondo"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem2"
         android:text="@string/AhorroDinero"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
@@ -48,10 +47,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem1" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btBenitem3"
         style="Theme.Splash.NoActionBar"
         android:layout_width="369dp"
         android:layout_height="45dp"
@@ -59,17 +58,16 @@
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem3"
         android:text="@string/AhorroPetroleo"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btBenitem4"
         style="Theme.Splash.NoActionBar"
         android:layout_width="369dp"
         android:layout_height="45dp"
@@ -77,17 +75,16 @@
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem4"
         android:text="@string/RecursosNaturales"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem3" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btBenitem5"
         style="Theme.Splash.NoActionBar"
         android:layout_width="369dp"
         android:layout_height="45dp"
@@ -95,17 +92,16 @@
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem5"
         android:text="@string/Empleos"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem4" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btBenitem6"
         style="Theme.Splash.NoActionBar"
         android:layout_width="369dp"
         android:layout_height="45dp"
@@ -113,17 +109,16 @@
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem6"
         android:text="@string/MateriasPrimas"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem5" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btBenitem7"
         style="Theme.Splash.NoActionBar"
         android:layout_width="369dp"
         android:layout_height="45dp"
@@ -131,24 +126,22 @@
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem7"
         android:text="@string/FabricacionProductos"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/btBenitem6" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btBenitem1"
         android:layout_width="369dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
-        android:onClick="Benitem1"
         android:text="@string/Reduccion"
         android:textColor="#FFFFFF"
         android:textSize="10sp"
