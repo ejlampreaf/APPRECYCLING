@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Splash</string>
+    <string name="app_name">AppRecycling</string>
     <string name="ingresar">Ingresar</string>
     <string name="title_activity_segunda2">SegundaActivity2</string>
     <!-- Strings used for fragments for navigation -->
