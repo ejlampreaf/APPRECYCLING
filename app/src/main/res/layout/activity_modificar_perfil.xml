@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68F097"
+
+    tools:context=".nav_Perfil">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvBienvanidaPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/tv_bienvenida_perfil"
+        android:text="@string/tv_bienvenida_perfil"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/IngNombre"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingnombre"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBienvanidaPerfil" />
+
+    <EditText
+        android:id="@+id/IngEdad"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingedad"
+        android:inputType="text|number"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IngNombre"
+        app:layout_constraintTop_toBottomOf="@+id/IngNombre" />
+
+    <EditText
+        android:id="@+id/IngSexo"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingsexo"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IngEdad"
+        app:layout_constraintStart_toStartOf="@+id/IngEdad"
+        app:layout_constraintTop_toBottomOf="@+id/IngEdad" />
+
+    <EditText
+        android:id="@+id/IngCiudad"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingciudad"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IngSexo"
+        app:layout_constraintStart_toStartOf="@+id/IngSexo"
+        app:layout_constraintTop_toBottomOf="@+id/IngSexo" />
+
+    <EditText
+        android:id="@+id/IngPensamiento"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="44dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/et_ingpensamiento"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IngCiudad"
+        app:layout_constraintStart_toStartOf="@+id/IngCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/IngCiudad" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="100dp"
+        android:hint="@string/btn_guardar"
+        android:text="@string/btn_guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,14 +17,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
-        <activity android:name=".Info_CuidadosAmbientales">
+        <activity android:name=".activity_miAyuda">
 
         </activity>
+        <activity android:name=".activity_modificarPerfil" >
+
+        </activity>
+        <activity android:name=".activity_simbolos" >
+
+        </activity>
+        <activity android:name=".activity_comoReciclar" >
+        </activity>
+        <activity android:name=".activity_verPerfil" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Info_CuidadosAmbientales" ></activity>
         <activity
             android:name=".Info_ElementosReciclablesActivity"
-            android:theme="@style/Theme.Splash_2">
-
-        </activity>
+            android:theme="@style/Theme.Splash_2" />
         <activity
             android:name=".activity_benitem7"
             android:theme="@style/Theme.Splash_2" />
@@ -74,40 +88,18 @@
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-
-
-
-
-        <activity android:name=".Info_TiposActivity"></activity>
+        <activity android:name=".Info_TiposActivity" />
         <activity
             android:name=".Info_TiposDescripcionActivity"
             android:theme="@style/Theme.Splash_2" />
-
-
-        <activity android:name=".ActivityMenuOverflow">
-
-        </activity>
-
-
+        <activity android:name=".ActivityMenuOverflow" />
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
-
-
-
         <activity
             android:name=".MenuApp"
             android:theme="@style/Theme.Splash.NoActionBar" />
-
-
-
-
     </application>
 
 </manifest>

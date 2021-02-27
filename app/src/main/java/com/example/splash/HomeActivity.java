@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
+    //Logica para incorporar el menu overfloat a la aplicación
     //Metodo para mostrar los botones de accion
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.overflow2, menu);

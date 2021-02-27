@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    layout_height="match:parent"
+    layout_width="wrap_content"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="#68F097">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"        >
+
+        <RelativeLayout
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotext1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="¿Cómo Reciclar?"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="El deterioro del medio ambiente ha llevado a que los seres humanos tratemos de tener una conciencia ecológica tanto a nivel personal como empresarial, y por esta razón se busca estrategias para revertir el daño ocasionado al medio ambiente."
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="¿Qué es el reciclaje?"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Es un proceso donde los distintos residuos o materiales desechados son recolectados para posteriormente ser transformados en nuevos materiales o productos que pueden ser utilizados o comercializados.
+
+La filosofía del reciclaje es que los residuos deben ser tratados como recursos para satisfacer la demanda de materia prima que requieren las empresas utilizando recursos que ya hemos extraído y utilizado.
+El reciclaje tiene dos ángulos de actuación.
+
+1.	Uso de tecnología necesaria para realizar el reciclaje
+2.	Dar respuesta a los retos de cuidado del medio ambiente.
+
+Por esto, el reciclaje requiere de programas de investigación, experimentación e innovación que permitan llegar a un reciclaje óptimo.
+"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titulotext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="¿Qué se puede reciclar?"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Los principales materiales que actualmente pueden reciclarse son:
+
+El plástico
+Muchos tipos de plástico se utilizan en artículos de primera necesidad que forman parte del día de personas y empresas. El porcentaje de residuos plásticos reciclados es mínimo y su impacto al medio ambiente si es muy grande.
+
+El Vidrio.
+El vidrio es un material inerte utilizado en muchos productos. Millones de botellas de vidrios son recicladas gracias a las características de su material de arena de playa y silicatos pueden ser fundidos para crear nuevos productos sin tener que agregar otros compuestos químicos. El vidrio es 100% reciclable.
+
+El Papel y el cartón
+Según investigaciones el papel y el cartón es una de las fracciones de residuos más numerosa. El papel y cartón puede reciclarse consecutivamene hasta 7 veces. Reciclar el papel y cartón salva millones de árboles de ser talados, además de disminuir la contaminación del agua y del aire.
+
+El Aluminio.
+Este recurso es como el vidrio, ya que sus características permiten que la mayoría de aluminio utilizado en las latas sea reciclados con éxito. Además, el aluminio puede ser reciclado una y varias veces casi en su totalidad, ya que puede ser fundido y preparado para la fabricación de nuevos envases.
+
+Los Metales.
+Debido a que es un recurso perfecto puede recuperarse una y otra vez, es fundido para la elaboración de nuevos productos.
+
+Los desperdicios orgánicos.
+Pueden ser reciclados por un tratamiento de compostaje que finalmente producirá un abono natural para integrarse a la tierra, que proporcionan nutrientes para cultivos, siembras agrícolas u ornamentales.
+"
+                    android:textColor="@color/black"
+                    android:textSize="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
