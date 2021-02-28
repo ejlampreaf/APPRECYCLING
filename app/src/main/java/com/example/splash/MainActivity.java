@@ -82,8 +82,6 @@ public class MainActivity extends Activity {
 
 
     }
-
-
     public void onRequestPermissionResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == REQUEST_PERMISSION_CAMERA) {
             if (permissions.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -131,6 +129,9 @@ public class MainActivity extends Activity {
         }
         else if (id==R.id.miAyuda){
             Toast.makeText(this, "ver la ayuda", Toast.LENGTH_SHORT).show();
+        }
+        else if (id==R.id.cerrarSesion){
+            Toast.makeText(this, "cerrar Sesión", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
 

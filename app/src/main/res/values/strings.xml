@@ -104,6 +104,7 @@
     <string name="simbolos">Ver Simbolos</string>
     <string name="modificarPerfil">Modificar Perfil</string>
     <string name="miAyuda">mi Ayuda</string>
+    <string name="cerrarSesion">Cerrar Sesion</string>
 
 
     //creamos relacion para objetos Beneficios

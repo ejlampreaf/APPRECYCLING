@@ -39,7 +39,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotext1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -48,10 +48,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="¿Cómo Reciclar?"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/text1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="El deterioro del medio ambiente ha llevado a que los seres humanos tratemos de tener una conciencia ecológica tanto a nivel personal como empresarial, y por esta razón se busca estrategias para revertir el daño ocasionado al medio ambiente."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -83,7 +83,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotext2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -92,10 +92,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="¿Qué es el reciclaje?"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/text2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -113,7 +113,7 @@ El reciclaje tiene dos ángulos de actuación.
 Por esto, el reciclaje requiere de programas de investigación, experimentación e innovación que permitan llegar a un reciclaje óptimo.
 "
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -136,7 +136,7 @@ Por esto, el reciclaje requiere de programas de investigación, experimentación
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotext3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -148,7 +148,7 @@ Por esto, el reciclaje requiere de programas de investigación, experimentación
                         android:textSize="10dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/text3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@ Los desperdicios orgánicos.
 Pueden ser reciclados por un tratamiento de compostaje que finalmente producirá un abono natural para integrarse a la tierra, que proporcionan nutrientes para cultivos, siembras agrícolas u ornamentales.
 "
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>

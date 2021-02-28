@@ -25,4 +25,8 @@
         android:id="@+id/miAyuda"
         android:title="@string/miAyuda"
         android:icon="@drawable/iconoayuda"/>
+    <item
+        android:id="@+id/cerrarSesion"
+        android:title="@string/cerrarSesion"
+        android:icon="@drawable/planeth"/>
 </menu>
