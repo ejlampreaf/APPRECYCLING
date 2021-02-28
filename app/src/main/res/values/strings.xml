@@ -64,6 +64,8 @@
 
     //creamos relacion para objetos en activity_info_tipos
     <string name="textviewtipos">Tipos de Reciclaje</string>
+    <string name="imageviewlefttipos"></string>
+    <string name="imageviewrighttipos"></string>
 
     //creamos relacion para objetos en activity_info_tipos_descripcion
     <string name="textviewtitulotiposdescripcion">Titulo_Descripcion</string>
@@ -126,6 +128,12 @@
     <string name="txtviewtips"></string>
     <string name="imgviewtips">Tips</string>
     <string name="btndescripciontips">Descripcion</string>
+
+    //creamos relacion para objetos en activity_info_danos
+    <string name="textviewdanos">Daños Ambientales</string>
+
+
+
 
 
     <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>

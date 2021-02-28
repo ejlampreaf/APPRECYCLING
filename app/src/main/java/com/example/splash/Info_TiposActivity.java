@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 public class Info_TiposActivity extends AppCompatActivity {
 
@@ -24,7 +23,7 @@ public class Info_TiposActivity extends AppCompatActivity {
         //Nuevo adaptador
         ArrayAdapter adapter = new ArrayAdapter(this, R.layout.list_item_tipos, lista);
         // Conexion parte logica y grafica
-        listviewtipos = (ListView)findViewById(R.id.listviewtipos);
+        listviewtipos = (ListView)findViewById(R.id.listviewdanos);
         //Conexion Adaptador y listview
         listviewtipos.setAdapter(adapter);
         //Generacion de actividad al dar clic en items de la lista
