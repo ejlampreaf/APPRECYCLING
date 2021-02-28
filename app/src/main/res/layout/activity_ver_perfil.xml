@@ -24,13 +24,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <TextView
         android:id="@+id/perf_nombre"
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="224dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -39,7 +38,7 @@
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="296dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,7 +47,7 @@
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginTop="372dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,11 +56,11 @@
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="436dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <com.codesgood.views.JustifiedTextView
         android:id="@+id/perf_pensamiento"
         android:layout_width="261dp"
         android:layout_height="155dp"
