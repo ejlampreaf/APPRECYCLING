@@ -23,6 +23,8 @@
         <activity android:name=".activity_simbolos"></activity>
         <activity android:name=".activity_modificarPerfil"></activity>
         <activity android:name=".activity_miAyuda"></activity>
+
+
         <activity
             android:name=".Info_ElementosReciclablesActivity"
             android:theme="@style/Theme.Splash_2"></activity>
@@ -34,6 +36,11 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
+        <activity android:name=".ActivityMenuOverflow">
+        </activity>
+
+
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -69,12 +76,15 @@
         <activity android:name=".Loginactivity">
 
         </activity>
+
         <activity
             android:name=".MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+
         <activity
             android:name=".MenuApp"
             android:theme="@style/Theme.Splash.NoActionBar" />
+
     </application>
 
 </manifest>

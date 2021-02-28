@@ -56,30 +56,6 @@ public class MainActivity extends Activity {
     }
 
 
-    //Metodo para asignar las funciones correspondientes a las opciones
-    public boolean onOptionsItemSelected(MenuItem item){
-        int id = item.getItemId();
-        if (id==R.id.verPerfil){
-            Toast.makeText(this, "ver el perfil", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.comoReciclar){
-            Toast.makeText(this, "ver como reciclar", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.Simbolos){
-            Toast.makeText(this, "ver los simbolos", Toast.LENGTH_SHORT).show();
-        }else if (id==R.id.modificarPerfil){
-            Toast.makeText(this, "ver modificar perfil", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.miAyuda){
-            Toast.makeText(this, "ver la ayuda", Toast.LENGTH_SHORT).show();
-        }
-        else if (id==R.id.cerrarSesion){
-            Toast.makeText(this, "cerrar Sesión", Toast.LENGTH_SHORT).show();
-        }
-        return super.onOptionsItemSelected(item);
-
-    }
-
 
 
 

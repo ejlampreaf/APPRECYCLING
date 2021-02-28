@@ -81,11 +81,8 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
 
             case R.id.cerrarSesion:
-                Intent intent6 = new Intent(this, activity_cerrarSesion.class);
-                startActivity(intent6);
+                finish();
                 return true;
-
-
         }
         return super.onOptionsItemSelected(item);
 

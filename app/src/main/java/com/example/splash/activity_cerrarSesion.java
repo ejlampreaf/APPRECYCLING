@@ -23,7 +23,6 @@ public class activity_cerrarSesion extends AppCompatActivity {
         mcerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(activity_cerrarSesion.this, Loginactivity.class);
 
                 finish();
 
