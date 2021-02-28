@@ -134,9 +134,6 @@
     <string name="textviewdanos">Daños Ambientales</string>
 
 
-
-
-
     <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>
     <string name="et_ingnombre">Ingrese su Nombre</string>
     <string name="et_ingedad">Ingrese su edad</string>
@@ -149,13 +146,10 @@
     <string name="btn_como_cambiar_perfil">Comó cambiar mi perfil</string>
 
 
-
-
     <string name="Guardar">Button</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="ver_perfil">Perfil</string>
     <string name="title_activity_maps_lugares">Map</string>
-
 
 
     <string name="picture">Mi foto</string>
