@@ -137,7 +137,7 @@
     <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>
     <string name="et_ingnombre">Ingrese su Nombre</string>
     <string name="et_ingedad">Ingrese su edad</string>
-    <string name="et_ingsexo">Ingrese su orientación sexual</string>
+    <string name="et_ingsexo">Ingrese su genero</string>
     <string name="et_ingciudad">Ingrese la ciudad donde vive</string>
     <string name="et_ingpensamiento">¿Qué opina sobre el reciclaje y el cuidado del medio ambiente?</string>
     <string name="btn_guardar">Guardar</string>
