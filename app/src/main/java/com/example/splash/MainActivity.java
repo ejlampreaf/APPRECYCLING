@@ -33,6 +33,8 @@ public class MainActivity extends Activity {
     private static final int REQUEST_PERMISSION_CAMERA = 100;
     private static final int REQUEST_IMAGE_CAMERA = 101;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,8 +59,6 @@ public class MainActivity extends Activity {
         Timer tiempo = new Timer();
 
         tiempo.schedule(tarea, 4000);
-
-
 
 
 
