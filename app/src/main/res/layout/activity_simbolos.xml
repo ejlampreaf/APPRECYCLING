@@ -51,7 +51,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -60,10 +60,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Reciclar"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Fue creado en 1970, en un producto o envase, significa que está fabricado con materiales reciclables"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -108,7 +108,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -117,10 +117,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo punto verde"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Creado en Alemania en 1991 y adoptado en 1994 por los Países Miembros de la UE, señala que los productos cumplen con la normativa que obliga a las empresas de envases a responsabilizarse del reciclaje de sus productos."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -166,7 +166,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -175,10 +175,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo Tidyman"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -187,7 +187,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Su objetivo es claro: responsabilizar a quien quiere deshacerse del mismo para que lo haga en un lugar adecuado."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -224,7 +224,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -233,10 +233,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo PET o PETE (Polietileno tereftalato)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -245,7 +245,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Plástico muy usado en envases de bebidas y textiles, se le considera NO biodegradable, puede ser degradado mediante un proceso químico."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -282,7 +282,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -291,10 +291,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo HDPE (Polietileno de alta densidad)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -303,7 +303,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Plástico muy usado fabricación de objetos, Se puede reciclar por procesos de separación y selección, molienda, secado y paletizado."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -339,7 +339,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -348,10 +348,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de V o PVC (Vinílicos o Cloruro de Polivinilo)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -360,7 +360,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Derivado del plástico más versátil, puede ser reciclado por proceso mecánico, químico o energético"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -397,7 +397,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -406,10 +406,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de LDPE (Polietileno de baja densidad)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -418,7 +418,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Es el plástico más popular del mundo, puede ser reciclado por proceso mecánico o químico."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -455,7 +455,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -464,10 +464,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo PP (Polipropileno)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -476,7 +476,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Es impermeable, irrompible, brillante y liviano, y puede presentarse en forma."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -513,7 +513,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -522,10 +522,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de PS (Poliestireno)"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -534,7 +534,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Es el cuarto plástico más consumido, su reciclaje es posible, pero difícil."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -571,7 +571,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -580,10 +580,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Others"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -592,7 +592,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Productos que combinan diferentes tipos, juguetes por ejemplo. Su reciclaje es muy complejo y costoso. De hecho, no siempre es posible."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -629,7 +629,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -638,10 +638,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Punto Sigre Medicamentos"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -650,7 +650,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Para deposito de los medicamentos que ya están caducados, los que ya no se estén usando"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -687,7 +687,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -696,10 +696,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Residuos Electónicos"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -708,7 +708,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Se les coloca este símbolo para recordar que NO se pueden tirar a la basura porque son reciclables, además de por su impacto en el medio ambiente"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -745,7 +745,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -754,10 +754,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Residuos de Metales"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -766,7 +766,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="Aparece en los metales que pueden ser reciclados"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -803,7 +803,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -812,10 +812,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Simbolo de Residuos de Vidrio"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -824,7 +824,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="El vidrio se trata con productos químicos y aguas para eliminar suciedades o grasas, y a continuación se retiran los elementos de plástico, papel y otros residuos, 100% reciclable."
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>
@@ -861,7 +861,7 @@
                     android:layout_marginTop="2dp"
                     android:orientation="vertical">
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/titulotexts15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -870,10 +870,10 @@
                         android:layout_marginBottom="2dp"
                         android:text="Canecas y colores"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="13dp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.codesgood.views.JustifiedTextView
                         android:id="@+id/texts15"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -882,7 +882,7 @@
                         android:layout_marginBottom="2dp"
                         android:text="El color indica el tipo de objeto que se puede colocar en su interior"
                         android:textColor="@color/black"
-                        android:textSize="10dp"
+                        android:textSize="12dp"
                         android:textStyle="normal" />
                 </LinearLayout>
             </RelativeLayout>

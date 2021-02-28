@@ -2,7 +2,9 @@ package com.example.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -35,5 +37,11 @@ public class activity_verPerfil extends AppCompatActivity {
         perf_sexo.setText(midato2);
         perf_ciudad.setText(midato3);
         perf_pensamiento.setText(midato4);
+
+
+
+
+
+
     }
 }
