@@ -24,14 +24,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageView
-        android:id="@+id/picture"
-        android:layout_width="280dp"
-        android:layout_height="146dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ver_miperfil" />
 
     <TextView
         android:id="@+id/perf_nombre"
@@ -78,14 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btnOpenCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="128dp"
-        android:src="@drawable/ic_menu_camera"
-        app:layout_constraintEnd_toEndOf="@+id/picture"
-        app:layout_constraintTop_toBottomOf="@+id/picture" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
