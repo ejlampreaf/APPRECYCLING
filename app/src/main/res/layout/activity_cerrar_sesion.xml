@@ -6,14 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activity_cerrarSesion">
 
-    <Button
-        android:id="@+id/mcerrarSesion"
-        android:layout_width="154dp"
-        android:layout_height="78dp"
-        android:text="Continuar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="326dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
