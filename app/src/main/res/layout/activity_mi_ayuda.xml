@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".activity_miAyuda">
 
+    <TextView
+        android:id="@+id/textviewmiayuda"
+        android:layout_width="283dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="@string/textviewdanos"
+        android:text="@string/txtviewmiayuda"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listviewdmiayudavovler"
+        android:layout_width="358dp"
+        android:layout_height="405dp"
+        android:scrollbarSize="100dp"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewdanos"
+        app:layout_constraintVertical_bias="0.235" />
+
+
+
+
+
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

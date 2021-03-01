@@ -34,6 +34,8 @@
     <string name="bt_volver">Volver</string>
     <string name="itemvolver">Volver</string>
 
+    <string name="txtviewmiayuda">Como volver en el menu</string>
+
 
     //creamos relacion para objetos en activity_home
     <string name="txt_bienvenida">BIENVENIDO A</string>
