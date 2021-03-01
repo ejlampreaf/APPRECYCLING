@@ -32,6 +32,7 @@
     <string name="im_simbolo_canecas">Colores de las canecas</string>
 
     <string name="bt_volver">Volver</string>
+    <string name="itemvolver">Volver</string>
 
 
     //creamos relacion para objetos en activity_home

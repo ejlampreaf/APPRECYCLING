@@ -18,11 +18,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash">
         <activity android:name=".activity_cerrarSesion"></activity>
-        <activity android:name=".activity_verPerfil"></activity>
-        <activity android:name=".activity_comoReciclar"></activity>
-        <activity android:name=".activity_simbolos"></activity>
-        <activity android:name=".activity_modificarPerfil"></activity>
-        <activity android:name=".activity_miAyuda"></activity>
+        <activity
+            android:name=".activity_verPerfil"
+            android:theme="@style/Theme.AppCompat.Light">
+        </activity>
+        <activity android:name=".activity_comoReciclar"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity android:name=".activity_simbolos"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity android:name=".activity_modificarPerfil"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
+        <activity android:name=".activity_miAyuda"
+            android:theme="@style/Theme.AppCompat.Light"></activity>
 
 
         <activity

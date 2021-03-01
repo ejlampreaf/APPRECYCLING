@@ -79,7 +79,10 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intent5 = new Intent(this, activity_miAyuda.class);
                 startActivity(intent5);
                 return true;
-
+            case R.id.volver:
+                Intent intent6 = new Intent(this, HomeActivity.class);
+                startActivity(intent6);
+                return true;
             case R.id.cerrarSesion:
                 finish();
                 return true;

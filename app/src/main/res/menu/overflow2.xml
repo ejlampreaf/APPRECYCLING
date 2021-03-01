@@ -3,6 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
 
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView" />
     <item
         android:id="@+id/verPerfil"
         android:icon="@drawable/iconoperfil"
@@ -24,6 +30,10 @@
         android:id="@+id/miAyuda"
         android:title="@string/miAyuda"
         android:icon="@drawable/iconoayuda"/>
+    <item
+        android:id="@+id/volver"
+        android:title="Volver"
+        app:actionViewClass="android.widget.SearchView" />
     <item
         android:id="@+id/cerrarSesion"
         android:title="@string/cerrarSesion"
