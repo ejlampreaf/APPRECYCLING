@@ -10,43 +10,43 @@
 
     <ImageView
         android:id="@+id/imageviewrighthome"
-        android:layout_width="228dp"
-        android:layout_height="157dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="4dp"
         android:contentDescription="@string/imv_right_Info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottomright"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewlugares"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomrightajustado"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageviewlefthome"
-        android:layout_width="190dp"
-        android:layout_height="136dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/bottomleft"
+        android:src="@drawable/bottomleftajustado"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos"
-        app:layout_constraintVertical_bias="0.955"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewdanos"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomleftajustado"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textviewhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:contentDescription="@string/txt_bienvenida"
         android:text="@string/txt_bienvenida"
         android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -74,17 +74,48 @@
         app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
         app:srcCompat="@drawable/informacion" />
 
+
+    <TextView
+        android:id="@+id/txtviewinfo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/imagebuttoninfo_background"
+        android:contentDescription="@string/txtviewinfo"
+        android:text="@string/txtviewinfo"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttoninfo"
+        tools:ignore="MissingConstraints" />
+
     <ImageButton
         android:id="@+id/imagebuttondanos"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/imagebuttondanos_background"
         android:contentDescription="@string/imb_danos"
         android:onClick="Danos"
         app:layout_constraintStart_toStartOf="@+id/imagebuttoninfo"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttoninfo"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewinfo"
         app:srcCompat="@drawable/danos" />
+
+    <TextView
+        android:id="@+id/txtviewdanos"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/imagebuttondanos_background"
+        android:contentDescription="@string/txtviewdanos"
+        android:text="@string/txtviewdanos"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttondanos"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imagebuttonbeneficios"
@@ -101,17 +132,47 @@
         app:layout_constraintTop_toBottomOf="@+id/imageviewlogohome"
         app:srcCompat="@drawable/beneficios" />
 
+    <TextView
+        android:id="@+id/txtviewbeneficios"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/imagebuttonbeneficios_background"
+        android:contentDescription="@string/txtviewbeneficios"
+        android:text="@string/txtviewbeneficios"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonbeneficios"
+        tools:ignore="MissingConstraints" />
+
     <ImageButton
         android:id="@+id/imagebuttonlugares"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/imagebuttonlugares"
         android:contentDescription="@string/imb_lugares"
         android:onClick="Lugares"
         app:layout_constraintEnd_toEndOf="@+id/imagebuttonbeneficios"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttonbeneficios"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewbeneficios"
         app:srcCompat="@drawable/lugares" />
+
+    <TextView
+        android:id="@+id/txtviewlugares"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/imagebuttonbeneficios_background"
+        android:contentDescription="@string/txtviewlugares"
+        android:text="@string/txtviewlugares"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonlugares"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
@@ -119,6 +180,10 @@
         android:layout_height="wrap_content"
         app:barrierDirection="top"
         app:constraint_referenced_ids="imageviewlefthome" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

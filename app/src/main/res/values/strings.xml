@@ -41,6 +41,10 @@
     <string name="imb_danos">Daños</string>
     <string name="imb_beneficios">Beneficios</string>
     <string name="imb_lugares">Lugares</string>
+    <string name="txtviewinfo">Información</string>
+    <string name="txtviewdanos">Daños</string>
+    <string name="txtviewbeneficios">Beneficios</string>
+    <string name="txtviewlugares">Lugares</string>
     <string name="imv_left_Home"></string>
     <string name="imv_right_Home"></string>
     <string name="title_activity_registro">registroActivity</string>
