@@ -54,7 +54,7 @@ public class Info_ElementosReciclablesActivity<findViewById> extends AppCompatAc
             case R.id.imgbuttonpapelno:
                 //asignacion parametros
                 Titdescripcion = "Qué no debemos reciclar";
-                descripcion = "Papel plastificado, servilletas sucias, papel higiénico, papel metalizado, o papel de carbón. Por ejemplo, el papel higiénico o las servilletas usadas que ya han sido manipuladas, pueden contaminar el papel; el papel metalizado por su parte, tienen procesos que lo hacen más afín a las latas.dbasbBavsdbansdbAnbskjalfbkajasdA";
+                descripcion = "Papel plastificado, servilletas sucias, papel higiénico, papel metalizado, o papel de carbón. Por ejemplo, el papel higiénico o las servilletas usadas que ya han sido manipuladas, pueden contaminar el papel; el papel metalizado por su parte, tienen procesos que lo hacen más afín a las latas.";
                 datosimg = R.drawable.elementospapelno;
                 break;
             case R.id.imgbuttonplasticosi:

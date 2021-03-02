@@ -10,10 +10,13 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/itemdescargar"
+        android:checkable="true"
         android:icon="@drawable/descargar2"
         android:title="@string/itemdescargar"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/itemhome"
-        android:title="@string/itemhome" />
+        android:icon="@drawable/home"
+        android:title="@string/itemhome"
+        app:showAsAction="ifRoom" />
 </menu>

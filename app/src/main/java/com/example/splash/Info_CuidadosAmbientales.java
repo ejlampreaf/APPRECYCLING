@@ -114,7 +114,7 @@ public class Info_CuidadosAmbientales extends AppCompatActivity {
                 }
                 if (seleccion == 3) {
                     Titdescripcion = txttips.getText().toString();
-                    descripcion = "Ocho millones de toneladas de plástico terminan en el océano si reutilizas evitarás ese impacto.\n\n•  Si llevas agua contigo evita comprar botellas nuevas, ten un contenedor especial para tu agua. \n\n•  En un restaurante procura no usar pitillos, cubiertos de bambú o acero son una opción que ayuda al medio ambiente. \n\n•  Usa bolsas de tela para ir al supermercado.\n\n•  Ten un vaso propio para tus bebidas calientes.";
+                    descripcion = "Ocho millones de toneladas de plástico terminan en el océano, si reutilizas evitarás ese impacto.\n\n•  Si llevas agua contigo evita comprar botellas nuevas, ten un contenedor especial para tu agua. \n\n•  En un restaurante procura no usar pitillos, cubiertos de bambú o acero son una opción que ayuda al medio ambiente. \n\n•  Usa bolsas de tela para ir al supermercado.\n\n•  Ten un vaso propio para tus bebidas calientes.";
                     datosimg = R.drawable.cuidadosplastico;
                 }
                 if (seleccion == 4) {

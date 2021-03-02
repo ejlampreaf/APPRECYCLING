@@ -148,7 +148,7 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
             }
             return true;
         } else if (id == R.id.itemhome) {
-            Intent regresar = new Intent(this, Info_TiposActivity.class);
+            Intent regresar = new Intent(this, HomeActivity.class);
             startActivity(regresar);
             return true;
         }

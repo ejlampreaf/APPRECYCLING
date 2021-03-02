@@ -7,28 +7,32 @@
     tools:context=".Info_TiposActivity">
 
     <ImageView
-        android:id="@+id/imageviewrighttipos5"
-        android:layout_width="445dp"
-        android:layout_height="330dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:contentDescription="@string/imv_right_Info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottomright"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="634dp" />
-
-    <ImageView
-        android:id="@+id/imageviewleftinfo3"
+        android:id="@+id/imageviewlefthome6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="700dp"
-        android:layout_marginEnd="212dp"
-        android:contentDescription="@string/imv_left_Info"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottomleftajustado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listviewdanos"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomleftajustado"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageviewrighthome6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/imv_right_Info"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bottomleft" />
+        app:layout_constraintTop_toBottomOf="@+id/listviewdanos"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomrightajustado"
+        tools:ignore="MissingConstraints" />
 
     <ListView
         android:id="@+id/listviewdanos"

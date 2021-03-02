@@ -6,31 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".Info_TiposDescripcionActivity">
 
-    <ImageView
-        android:id="@+id/imageviewrighttipos3"
-        android:layout_width="445dp"
-        android:layout_height="330dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
-        android:contentDescription="@string/imv_right_Info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottomright"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="634dp" />
-
-    <ImageView
-        android:id="@+id/imageviewleftinfo4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="700dp"
-        android:layout_marginEnd="212dp"
-        android:contentDescription="@string/imv_left_Info"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bottomleft" />
-
     <ScrollView
+        android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,6 +50,11 @@
                 android:contentDescription="@string/imvtiposdescripcion"
                 android:textAlignment="center"
                 app:srcCompat="@drawable/informacion" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>

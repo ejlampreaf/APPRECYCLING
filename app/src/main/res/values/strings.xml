@@ -56,9 +56,12 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     //creamos relacion para objetos en activity_info
-    <string name="imb_formas">Formas de reciclaje</string>
-    <string name="imb_elementos">Elementos de reciclaje</string>
+    <string name="imb_tipos">Tipos de Reciclaje</string>
+    <string name="imb_elementos">Elementos Reciclables</string>
     <string name="imb_cuidados">Cuidados Ambientales</string>
+    <string name="txt_tipos">Tipos de reciclaje</string>
+    <string name="txt_elementos">Elementos Reciclables</string>
+    <string name="txt_cuidados">Cuidados Ambientales</string>
     <string name="imv_left_Info"></string>
     <string name="imv_right_Info"></string>
     <string name="title_activity_menu_app">MenuApp</string>
@@ -81,6 +84,7 @@
 
 
     //creamos relacion para objetos en activity_info_elementos_reciclables
+    <string name="txtviewelementotitulo">Elementos Reciclables</string>
     <string name="txtviewelemento">Elementos</string>
     <string name="txtviewelementosi">Que Reciclar</string>
     <string name="txtviewelementono">Que No reciclar</string>

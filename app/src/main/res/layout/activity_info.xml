@@ -3,29 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
     <ImageView
-        android:id="@+id/imageviewrighttipos2"
-        android:layout_width="445dp"
-        android:layout_height="330dp"
+        android:id="@+id/imageviewlefthome5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottomleftajustado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewdanos"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomleftajustado"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageviewrighthome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="12dp"
         android:contentDescription="@string/imv_right_Info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bottomright"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="634dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtviewlugares"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomrightajustado"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/imagebuttontipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="72dp"
         android:backgroundTint="#FFFFFF"
-        android:contentDescription="@string/imb_formas"
+        android:contentDescription="@string/imb_tipos"
         android:onClick="Tipos"
         android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,39 +53,67 @@
         android:id="@+id/imagebuttonelementos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_elementos"
         android:onClick="Elementos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttontipos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tipos"
         app:srcCompat="@drawable/elementosreciclables" />
 
     <ImageButton
         android:id="@+id/imagebuttoncuidados"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/imb_cuidados"
         android:onClick="Cuidados"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagebuttonelementos"
+        app:layout_constraintTop_toBottomOf="@+id/txt_elementos"
         app:srcCompat="@drawable/cuidadosambientales" />
 
-    <ImageView
-        android:id="@+id/imageviewleftinfo"
+    <TextView
+        android:id="@+id/txt_tipos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="700dp"
-        android:layout_marginEnd="212dp"
-        android:contentDescription="@string/imv_left_Info"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/txt_tipos"
+        android:text="@string/txt_tipos"
+        android:textSize="16dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bottomleft" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttontipos" />
+
+    <TextView
+        android:id="@+id/txt_elementos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/txt_elementos"
+        android:text="@string/txt_elementos"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttonelementos" />
+
+    <TextView
+        android:id="@+id/txt_cuidados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/txt_cuidados"
+        android:text="@string/txt_cuidados"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagebuttoncuidados" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
