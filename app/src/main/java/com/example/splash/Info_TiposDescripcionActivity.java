@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
     public ImageView imvtiposdescripcion;
     //public Bitmap bmp;
     //public Bitmap scaledBitmap;
+     public   Button btnCompartir;
 
 
     @Override
@@ -53,10 +55,12 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         imvtiposdescripcion = (ImageView) findViewById(R.id.imvtiposdescripcion);
         imvtiposdescripcion.setImageResource(getIntent().getIntExtra("Image_Descripcion",0));
 
+        btnCompartir =findViewById(R.id.itemcompartir);
 
         //bmp = BitmapFactory.decodeResource(getResources(),getIntent().getIntExtra("Image_Descripcion",0));
 
         //scaledBitmap = Bitmap.createScaledBitmap(bm,100,100, false);
+
     }
 
     private void savePdf() {
@@ -120,6 +124,7 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
     }
 
 
+
     //Metodo para mostrar los botones de accion
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menuacciones, menu);
@@ -131,8 +136,17 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.itemcompartir) {
-            Intent regresar = new Intent(this, HomeActivity.class);
-            startActivity(regresar);
+
+                Intent sendIntent =new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
+                sendIntent.putExtra(Intent.EXTRA_TITLE, textViewtitulotiposdescripcion.getText().toString() );
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra(Intent.EXTRA_SUBJECT, textViewtitulotiposdescripcion.getText().toString() );
+                sendIntent.setType("text/plain");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, textViewtiposdescripcion.getText().toString() );
+                sendIntent.setType("text/plain");
+                startActivity(Intent.createChooser(sendIntent, "Share with"));
+
             return true;
         } else if (id == R.id.itemdescargar) {
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {

@@ -138,7 +138,7 @@
         android:id="@+id/btBenitem1"
         android:layout_width="369dp"
         android:layout_height="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="108dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#0088FF"
         android:fontFamily="@font/poppinsbold"
@@ -146,7 +146,19 @@
         android:textColor="#FFFFFF"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="181dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="BENEFICIOS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btBenitem1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
