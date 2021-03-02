@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class activity_modificarPerfil extends AppCompatActivity {
 
@@ -28,21 +29,34 @@ public class activity_modificarPerfil extends AppCompatActivity {
         IngCiudad = (EditText)findViewById(R.id.IngCiudad);
         IngPensamiento = (EditText)findViewById(R.id.IngPensamiento);
 
-
+        SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        IngNombre.setText(preferences.getString("nombre", ""));
+        IngEdad.setText(preferences.getString("edad", ""));
+        IngSexo.setText(preferences.getString("sexo", ""));
+        IngCiudad.setText(preferences.getString("ciudad", ""));
+        IngPensamiento.setText(preferences.getString("pensamiento", ""));
     }
 
     //Metodo para el boton guardar
     public void Enviar(View view) {
 
-
         Intent i = new Intent(this, activity_verPerfil.class);
-        i.putExtra ("dato", IngNombre.getText().toString());
-        i.putExtra ("dato1", IngEdad.getText().toString());
-        i.putExtra ("dato2", IngSexo.getText().toString());
-        i.putExtra ("dato3", IngCiudad.getText().toString());
-        i.putExtra ("dato4", IngPensamiento.getText().toString());
+        SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        SharedPreferences.Editor Obj_editor = preferencias.edit();
+        Obj_editor.putString("nombre", IngNombre.getText().toString());
+        Obj_editor.putString("edad", IngEdad.getText().toString());
+        Obj_editor.putString("sexo", IngSexo.getText().toString());
+        Obj_editor.putString("ciudad", IngCiudad.getText().toString());
+        Obj_editor.putString("pensamiento", IngPensamiento.getText().toString());
+        Obj_editor.commit();
+
         startActivity(i);
     }
+
+
+
+
+
     private void StartActivity(Intent intent) {
     }
 
@@ -52,23 +66,7 @@ public class activity_modificarPerfil extends AppCompatActivity {
         startActivity(informacion);
     }
 
-    //Metodo para ir a la actvity Daños
-    public void Danos(View view){
-        Intent danos = new Intent(this, Info_DanosActivity.class);
-        startActivity(danos);
-    }
 
-    //Metodo para ir a la Activity Beneficios
-    public void Beneficios (View view){
-        Intent beneficios = new Intent (this, BeneficiosActivity.class);
-        startActivity(beneficios);
-    }
-
-    //Metodo para ir a la Activity Lugares
-    public void Lugares (View view) {
-        Intent lugares = new Intent(this, activity_lugares.class);
-        startActivity(lugares);
-    }
 
     //Logica para incorporar el menu overfloat a la aplicación
 

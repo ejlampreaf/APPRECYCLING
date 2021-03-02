@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,48 +26,17 @@ public class activity_verPerfil extends AppCompatActivity {
         perf_ciudad = (TextView)findViewById(R.id.perf_ciudad) ;
         perf_pensamiento = (TextView)findViewById(R.id.perf_pensamiento) ;
 
-
-        String midato, midato1, midato2, midato3, midato4;
-        Intent intent = getIntent();
-
-        midato = intent.getStringExtra("dato");
-        midato1 = intent.getStringExtra("dato1");
-        midato2 = intent.getStringExtra("dato2");
-        midato3 = intent.getStringExtra("dato3");
-        midato4 = intent.getStringExtra("dato4");
-
-        perf_nombre.setText(midato);
-        perf_edad.setText(midato1);
-        perf_sexo.setText(midato2);
-        perf_ciudad.setText(midato3);
-        perf_pensamiento.setText(midato4);
-    }
-    private void StartActivity(Intent intent) {
     }
 
-    //Metodo para ir a la actvity Informacion
-    public void Informacion(View view){
-        Intent informacion = new Intent(this, InfoActivity.class);
-        startActivity(informacion);
-    }
 
-    //Metodo para ir a la actvity Daños
-    public void Danos(View view){
-        Intent danos = new Intent(this, Info_DanosActivity.class);
-        startActivity(danos);
-    }
 
-    //Metodo para ir a la Activity Beneficios
-    public void Beneficios (View view){
-        Intent beneficios = new Intent (this, BeneficiosActivity.class);
-        startActivity(beneficios);
-    }
 
-    //Metodo para ir a la Activity Lugares
-    public void Lugares (View view) {
-        Intent lugares = new Intent(this, activity_lugares.class);
-        startActivity(lugares);
-    }
+
+
+
+
+
+
 
     //Logica para incorporar el menu overfloat a la aplicación
 
