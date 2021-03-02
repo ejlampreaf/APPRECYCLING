@@ -9,6 +9,8 @@
     tools:context=".verPerfil">
 
     <!-- TODO: Update blank fragment layout -->
+
+
     <TextView
         android:id="@+id/ver_miperfil"
         android:layout_width="87dp"
@@ -23,13 +25,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/perf_nombre"
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="180dp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,7 +40,8 @@
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="252dp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,8 +49,9 @@
         android:id="@+id/perf_sexo"
         android:layout_width="259dp"
         android:layout_height="20dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="320dp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -56,7 +60,8 @@
         android:layout_width="259dp"
         android:layout_height="20dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="436dp"
+        android:layout_marginTop="392dp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,11 +69,11 @@
         android:id="@+id/perf_pensamiento"
         android:layout_width="261dp"
         android:layout_height="155dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="512dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="464dp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

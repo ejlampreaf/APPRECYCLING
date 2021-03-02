@@ -145,7 +145,7 @@
     <string name="textviewdanos">Daños Ambientales</string>
 
 
-    <string name="tv_bienvenida_perfil">Bienvenid@, en este espacio puede modificar su perfil</string>
+    <string name="tv_bienvenida_perfil">Bienvenid@, puede modificar su perfil</string>
     <string name="et_ingnombre">Ingrese su Nombre</string>
     <string name="et_ingedad">Ingrese su edad</string>
     <string name="et_ingsexo">Ingrese su genero</string>
