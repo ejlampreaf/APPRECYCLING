@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class activity_modificarPerfil extends AppCompatActivity {
@@ -39,8 +40,8 @@ public class activity_modificarPerfil extends AppCompatActivity {
 
     //Metodo para el boton guardar
     public void Enviar(View view) {
-
         Intent i = new Intent(this, activity_verPerfil.class);
+
         SharedPreferences preferencias = getSharedPreferences("datos", Context.MODE_PRIVATE);
         SharedPreferences.Editor Obj_editor = preferencias.edit();
         Obj_editor.putString("nombre", IngNombre.getText().toString());
@@ -49,6 +50,8 @@ public class activity_modificarPerfil extends AppCompatActivity {
         Obj_editor.putString("ciudad", IngCiudad.getText().toString());
         Obj_editor.putString("pensamiento", IngPensamiento.getText().toString());
         Obj_editor.commit();
+
+
 
         startActivity(i);
     }

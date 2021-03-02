@@ -14,28 +14,37 @@ import android.widget.TextView;
 
 public class activity_verPerfil extends AppCompatActivity {
     TextView perf_nombre, perf_edad, perf_sexo, perf_ciudad, perf_pensamiento;
+    SharedPreferences preferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ver_perfil);
-
         perf_nombre = (TextView)findViewById(R.id.perf_nombre) ;
         perf_edad = (TextView)findViewById(R.id.perf_edad) ;
         perf_sexo = (TextView)findViewById(R.id.perf_sexo) ;
         perf_ciudad = (TextView)findViewById(R.id.perf_ciudad) ;
         perf_pensamiento = (TextView)findViewById(R.id.perf_pensamiento) ;
 
+        preferences = getSharedPreferences("datos", MODE_PRIVATE);
+        String name = preferences.getString("nombre", "");
+        perf_nombre.setText(name);
+        String eda = preferences.getString("edad", "");
+        perf_edad.setText(eda);
+        String sex = preferences.getString("sexo", "");
+        perf_sexo.setText(sex);
+        String ciuda = preferences.getString("ciudad", "");
+        perf_ciudad.setText(ciuda);
+        String pensa = preferences.getString("pensamiento", "");
+        perf_pensamiento.setText(pensa);
+
     }
 
 
+    public void mostrarPreferencia(View view) {
 
 
-
-
-
-
-
+    }
 
 
     //Logica para incorporar el menu overfloat a la aplicación
