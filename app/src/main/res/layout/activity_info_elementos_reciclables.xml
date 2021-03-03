@@ -7,19 +7,6 @@
     tools:context=".Info_ElementosReciclablesActivity">
 
     <ImageView
-        android:id="@+id/imageviewlefthome3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:src="@drawable/bottomleftajustado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/bottomleftajustado"
-        tools:ignore="MissingConstraints" />
-
-    <ImageView
         android:id="@+id/imageviewrighthome3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,11 +15,27 @@
         android:contentDescription="@string/imv_right_Info"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView4"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/bottomrightajustado"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/imageviewlefthome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/bottomleftajustado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bottomleftajustado"
+        tools:ignore="MissingConstraints" />
+
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,8 +45,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
             <TableRow
                 android:layout_width="match_parent"
@@ -141,8 +143,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:padding="10dp"
-                >
+                android:padding="10dp">
 
                 <ImageView
                     android:id="@+id/imgviewplastico"
