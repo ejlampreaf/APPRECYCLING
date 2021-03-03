@@ -69,11 +69,7 @@
         <activity
             android:name=".HomeActivity"
             android:theme="@style/Theme.AppCompat.Light">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity android:name=".Info_TiposActivity">
@@ -92,7 +88,15 @@
 
         <activity
             android:name=".MainActivity"
-            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" />
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
 
         <activity
             android:name=".MenuApp"
