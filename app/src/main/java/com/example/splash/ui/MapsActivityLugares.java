@@ -71,7 +71,7 @@ public class MapsActivityLugares extends FragmentActivity implements OnMapReadyC
         LatLng ciudadbolivar = new LatLng(4.595779238237001, -74.15932302844737);
         mMap.addMarker(new MarkerOptions().position(ciudadbolivar).title("Localidad Ciudad Bolivar").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
 
-        LatLng teusaquillo = new LatLng(4.687839649769288, -74.12669140885218);
+        LatLng teusaquillo = new LatLng(4.649860181131327, -74.10187909393288);
         mMap.addMarker(new MarkerOptions().position(teusaquillo).title("Localidad Teusaquillo").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
 
         LatLng sancristobal = new LatLng(4.566840803381606, -74.09654503029718);
@@ -85,6 +85,9 @@ public class MapsActivityLugares extends FragmentActivity implements OnMapReadyC
 
         LatLng santafe = new LatLng(4.572245158721604, -74.09769045858782);
         mMap.addMarker(new MarkerOptions().position(santafe).title("Localidad Santa Fe").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
+
+        LatLng suba = new LatLng(4.7468344816138615, -74.09592511685777);
+        mMap.addMarker(new MarkerOptions().position(suba).title("Localidad Suba").snippet("Zona de reciclado").icon(BitmapDescriptorFactory.fromResource(R.drawable.trashgreen)));
 
 
 
