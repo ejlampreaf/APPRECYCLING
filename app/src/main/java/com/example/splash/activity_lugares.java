@@ -23,10 +23,10 @@ public class activity_lugares extends AppCompatActivity {
     //son dos arrays localidad y ubicacion
     private String[] localidad = {"Engativa", "Kennedy", "Fontibon", "Antonio Nariño","Chapinero",
                                   "Tunjuelito","Puente Aranda","Ciudad Bolívar","Teusaquillo","San Cristóbal",
-                                  "Bosa","Rafael Uribe","Santa Fe"};
+                                  "Bosa","Rafael Uribe","Santa Fe","Suba"};
     private String[] ubicacion = {"C. C Titan Plaza, Cra72 80-94", "Tranv 71d # 6-94Sur", "AV Ciudad de Cali con AV Ferrocarril, cl20 #82-52", "C Comercial Centro Mayor AV. NQS # cra38a sur", "C Comercial 93, Carrera 15 # 93-60",
                                   "Dile Tunjuelito,CL 48B Sur No. 27-80","Puente Aranda,GASEOSA LUX Calle 5C # 53D-12","INDUSEL,Autopista (AC 57R) Sur No. 67-59","Secretaría de Educación,Cll 26 No.66-63 BloqueB","SUPERCADE,20 de Julio\n" +
-                                  "Carrera 5A # 30D-20SUR","SUPERCADE Bosa,Av. Calle 57 R Sur #72D-12","Alcaldía Local de Rafael Uribe Uribe,CALLE 32 SUR 23 62","EDIFICIO BACHUE 2 PISO,CARRERA 10 #27-00"};
+                                  "Carrera 5A # 30D-20SUR","SUPERCADE Bosa,Av. Calle 57 R Sur #72D-12","Alcaldía Local de Rafael Uribe Uribe,CALLE 32 SUR 23 62","EDIFICIO BACHUE 2 PISO,CARRERA 10 #27-00","Supercade Suba, Avenida calle 145 # 103B-90"};
     //Se definen los objetos tipo textview y listview
     private TextView tv1;
     private ListView list1;
