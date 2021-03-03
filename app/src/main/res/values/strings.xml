@@ -35,6 +35,7 @@
     <string name="itemvolver">Volver</string>
 
     <string name="txtviewmiayuda">Como volver en el menu</string>
+    <string name="imv_miayuda1">Volver al menu</string>
 
 
     //creamos relacion para objetos en activity_home
