@@ -66,7 +66,7 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
     private void savePdf() {
         Document mDoc = new Document();
         String mFileName = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(System.currentTimeMillis());
-        String mFilePath = Environment.getExternalStorageDirectory() + "/" + mFileName + ".pdf";
+        String mFilePath = Environment.getExternalStorageDirectory() + "/APPRECYCLING " + mFileName + ".pdf";
 
         Bitmap bm = BitmapFactory.decodeResource(getResources(), getIntent().getIntExtra("Image_Descripcion",0));
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
@@ -96,7 +96,7 @@ public class Info_TiposDescripcionActivity extends AppCompatActivity {
             img.setAlignment(Element.ALIGN_CENTER);
             mDoc.add(img);
             mDoc.close();
-            Toast.makeText(this, "Archivo\n" + mFileName + ".pdf\nis saved to\n" + mFilePath, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Archivo\n" + mFileName + ".pdf\nse ha guardado en\n" + mFilePath, Toast.LENGTH_LONG).show();
         } catch (Exception e) {
             Toast.makeText(this, "Archivo no descargado\n"+ e.getMessage(), Toast.LENGTH_LONG).show();
             ;
