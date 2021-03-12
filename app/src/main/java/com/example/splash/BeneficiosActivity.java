@@ -58,7 +58,7 @@ public class BeneficiosActivity<findViewById> extends AppCompatActivity implemen
                 break;
             case R.id.btBenitem3:
                 //asignacion parametros
-                Titdescripcion = "Ahotto de Petróleo";
+                Titdescripcion = "Ahorro de Petróleo";
                 descripcion = "El ahorro del petróleo es uno de los beneficios del reciclaje, esto debido a que ayuda a ahorrar dinero, reduce el cambio climático, reduce el costo de dependencia de este y aumenta la sustentabilidad energética debido a que el petróleo es un recurso no renovable. Por otra parte, su explotación es menos frecuente y evita la fragmentación de suelos por la extracción de este.";
                 datosimg = R.drawable.petroleo;
                 break;
